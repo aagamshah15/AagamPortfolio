@@ -74,7 +74,7 @@ I prioritize dashboards that answer real questions, not just visually appealing 
 
 ## 🌐 Portfolio Website
 
-🔗 **Portfolio:** *https://github.com/aagamshah15/AagamPortfolio*
+🔗 **Portfolio:** *https://aagamshah15.github.io/AagamPortfolio/*
 
 ---
 
@@ -89,4 +89,5 @@ I prioritize dashboards that answer real questions, not just visually appealing 
 - All dashboards are hosted on **Tableau Public**
 - Datasets used are publicly available or anonymized
 - This repository is updated periodically as new projects are added
+
 
