@@ -1,0 +1,473 @@
+AAGAM PARAG SHAH
+Portfolio Content Master Document
+(217) 819-6525  |  aps22@illinois.edu  |  aagam.work7@gmail.com
+linkedin.com/in/aagamshah157  |  public.tableau.com/app/profile/aagam.shah7382
+Champaign, IL  |  Open to Relocation
+
+This document compiles all portfolio content for website use. Each section includes copy-ready text, tags, and display notes.
+
+1. About Me / Bio
+
+Short Bio (hero section — 1 sentence)
+Data & AI engineer building LLM pipelines, autonomous agents, and data products — with 2+ years at Cisco and active consulting at UIUC.
+Portfolio Note: Use on homepage hero directly below name. Keep it to one punchy line.
+About Bio (About page — 3 paragraphs)
+I'm Aagam Shah, an MS Information Management student at UIUC (GPA 3.89), with a background in computer engineering and data science. Before graduate school, I spent two years at Cisco Systems building ML and GenAI pipelines, analyzing enterprise system logs at scale, and pitching AI prototypes to engineering leadership — one of which was adopted as a permanent product feature used by engineers globally.
+At UIUC, I'm an Associate Consultant with the BIG Consulting group, working end-to-end on an AI knowledge management product for a B2B software client — from stakeholder interviews and PRD through MVP prototype and client presentations. My work spans three areas I genuinely care about: data engineering, AI/LLM systems, and product management.
+I'm drawn to problems where I can own the full arc — understand what users need, build the system that delivers it, and measure real outcomes.
+Portfolio Note: Use on About page. Three short paragraphs with breathing room between them.
+Taglines (pick one for hero)
+	•	Building AI systems that think in feedback loops, not just features.
+	•	Data engineer, AI product builder, and systems thinker.
+	•	From packet captures to LLM pipelines — I make complex systems understandable and useful.
+	•	MS Information Management @ UIUC | AI & Data | Ex-Cisco
+
+2. Education
+
+University of Illinois, Urbana-Champaign
+Degree: Master of Science in Information Management
+Duration: August 2025 - May 2027
+GPA: 3.89 / 4.0
+Location: Champaign, IL
+Relevant Coursework
+	•	Data Science
+	•	Information & Statistics
+	•	Data Warehousing & Visualizations
+	•	IS 507 - Data, Statistical Models & Information (parametric/non-parametric models, probability, decision analytics)
+	•	IS 504 - Sociotechnical Information Systems (AI systems evaluation, experimental study design)
+Portfolio Note: Highlight GPA badge. Use UIUC branding colors (navy/orange) if available.
+Manipal University, Jaipur
+Degree: Bachelor of Technology in Computer & Communication Engineering
+Minor: Data Science
+Duration: July 2019 - July 2023
+CGPA: 8.81 / 10.0
+Location: Jaipur, India
+Relevant Coursework
+	•	Object Oriented Programming
+	•	Operating Systems
+	•	Data Structures & Algorithms
+	•	Computer Networks
+	•	Data Analysis
+	•	Machine Learning
+	•	Database Management
+	•	Statistics
+Portfolio Note: Show degree timeline visually — graduation July 2023, then Cisco (Aug 2023 - Jul 2025), then UIUC (Aug 2025).
+Certifications
+	•	Cisco DevNet Associate
+	•	Cisco CCNA (Networking)
+	•	Google Data Analytics Professional
+Portfolio Note: Show as badge cards with issuer logo if available.
+
+3. Skills
+
+Skills organized by category. Use tag clouds or grouped cards on website.
+AI & Large Language Models
+	•	LangChain
+	•	Claude API (Anthropic)
+	•	OpenAI API
+	•	Agentic AI Workflow Design
+	•	Prompt Engineering
+	•	Retrieval-Augmented Generation (RAG)
+	•	Generative AI
+	•	LLM Evaluation & Testing
+	•	NLP (intent classification, text preprocessing, entity recognition)
+	•	Model Deployment & Inference APIs
+Machine Learning & Data Science
+	•	Scikit-Learn
+	•	TensorFlow
+	•	Keras
+	•	Feature Engineering
+	•	Statistical Modeling (regression, classification, clustering, GAM)
+	•	Random Forest, Decision Trees
+	•	K-Means Clustering
+	•	Computer Vision (OpenCV)
+	•	Hypothesis Testing & Experimental Design
+	•	Model Evaluation (MAE, RMSE, R-squared, precision/recall)
+Data Engineering & Analytics
+	•	ETL / ELT Pipeline Design
+	•	Data Modeling & Schema Design
+	•	dbt Core
+	•	Apache Airflow
+	•	DuckDB
+	•	Splunk
+	•	Object Storage (MinIO / S3-compatible)
+	•	Star Schema / Dimensional Modeling
+	•	Data Quality Frameworks
+Programming & Scripting
+	•	Python (Pandas, NumPy, Scikit-Learn, PyShark, FastAPI, Streamlit)
+	•	SQL
+	•	R
+	•	Bash / Shell Scripting
+	•	Perl
+	•	JavaScript / CSS / HTML
+	•	C / C++
+Databases & Storage
+	•	PostgreSQL
+	•	MS SQL Server
+	•	MySQL
+	•	MongoDB
+	•	Object Storage (MinIO, S3-compatible)
+Visualization & BI
+	•	Tableau (Public Portfolio available)
+	•	Power BI
+	•	Streamlit
+	•	Excel (Pivot Tables, VLOOKUP/XLOOKUP, VBA, Data Modeling)
+	•	Jupyter Notebooks
+	•	BusinessObjects
+Infrastructure & DevOps
+	•	Docker / Docker Compose
+	•	Git / GitHub
+	•	Linux / Unix
+	•	REST APIs
+	•	Kubernetes (basic)
+	•	Jenkins (basic)
+	•	Azure (familiar)
+	•	Databricks (familiar)
+Product Management
+	•	PRD Writing
+	•	Product Roadmapping
+	•	MVP Design & Prototyping
+	•	Competitor & Market Research
+	•	User Requirements Gathering
+	•	Stakeholder Communication
+	•	MECE Framework Analysis
+	•	Gantt Planning
+	•	Agile / Scrum
+Networking & Security (Domain Knowledge)
+	•	TCP/IP
+	•	Network Security Concepts
+	•	Firewall Troubleshooting (Cisco NGFW)
+	•	Packet Capture Analysis (PCAP)
+	•	CVE / Vulnerability Investigation
+
+4. Work Experience
+
+BIG (Business Information & Growth) Consulting, UIUC
+Role: Associate Consultant
+Project: AI Knowledge Management Engagement (B2B Software Client, NDA)
+Duration: January 2026 - Present
+Location: Champaign, IL
+Team: 3 consultants + 1 project manager
+What I Did
+	•	Co-led end-to-end product development for a B2B software client operating under NDA.
+	•	Conducted stakeholder interviews to identify user pain points and map existing workflows.
+	•	Authored a comprehensive Product Requirements Document (PRD) defining MVP scope, success criteria, and roadmap priorities.
+	•	Conducted competitor analysis and market research across AI knowledge management platforms.
+	•	Designed and prototyped a dynamic knowledge base using LLM pipelines to ingest, index, and surface information from structured and unstructured data sources.
+	•	Managed full project lifecycle documentation including Gantt charts, MECE analyses, technical assessments, and MVP prototype.
+	•	Presented findings and iterated on product direction across multiple client review cycles.
+Tags
+	•	Product Management
+	•	LLM Pipelines
+	•	PRD Writing
+	•	Consulting
+	•	Healthcare
+	•	RAG
+	•	Stakeholder Management
+Portfolio Note: Most current and PM-relevant experience. Feature prominently. Client is under NDA — do not name.
+Cisco Systems - Technical Consulting Engineer
+Duration: August 2023 - July 2025
+Location: Bangalore, India
+Team: TAC - Network Security
+What I Did
+	•	Managed 500+ enterprise client engagements across Fortune 500 companies, government agencies, and emergency services in 30+ countries.
+	•	Authored 50+ Root Cause Analysis (RCA) and remediation documents translating complex technical findings into executive-level recommendations.
+	•	Designed and shipped an AI-powered packet analysis agent using Python, LangChain, and NLP; successfully pitched to engineering leadership and adopted as a permanent product feature.
+	•	Built scalable log analysis infrastructure processing 100K+ network events daily; optimized query performance by 40% and reduced pipeline failures by 60%.
+	•	Developed production ML system for automated packet analysis achieving 80% classification accuracy on 10K+ daily captures with real-time inference via Streamlit.
+	•	Automated recurring diagnostic workflows using Python, Bash, and Perl — reducing triage time by 30%.
+	•	Collaborated with globally distributed engineering, sales, and lab teams across diverse client cultures.
+Key Metrics
+	•	500+ client engagements managed
+	•	50+ RCAs authored
+	•	100K+ daily events processed
+	•	80% ML classification accuracy
+	•	60% reduction in pipeline failures
+	•	40% query performance improvement
+	•	30% triage efficiency improvement
+Tags
+	•	AI Engineering
+	•	LangChain
+	•	NLP
+	•	ETL Pipelines
+	•	Splunk
+	•	Network Security
+	•	Python
+	•	Enterprise
+Portfolio Note: Lead with the AI agent story for PM/AI roles; lead with log/pipeline work for data engineering roles.
+Cisco Systems - Software Engineering Intern
+Duration: January 2023 - July 2023
+Location: Bangalore, India
+What I Did
+	•	Designed and built an AI-powered chatbot for document search and ticket routing using Python, ML, and NLP-based intent classification.
+	•	Achieved 90% user satisfaction and 85% classification accuracy at 1,000+ daily queries.
+	•	Implemented a Retrieval-Augmented Generation (RAG) pipeline for high-precision information retrieval.
+	•	Designed relational database schema and ETL processes for conversation history storage in MongoDB.
+	•	Deployed REST API for real-time model inference on cloud infrastructure with 24/7 availability.
+	•	Presented system performance metrics and improvement recommendations to senior stakeholders.
+Tags
+	•	RAG
+	•	Chatbot
+	•	NLP
+	•	Python
+	•	MongoDB
+	•	REST API
+	•	ML
+Portfolio Note: Frame as your first end-to-end AI product story — owned from use case to deployment.
+
+5. Projects
+
+5A. Professional & Applied Projects
+AI-Powered Packet Analysis Agent (Cisco) — FLAGSHIP
+Status: Shipped to production at Cisco
+Context: Built during Cisco full-time role
+GitHub: Internal / proprietary — not open source
+Tech Stack: Python, LangChain, PyShark, NLP, Streamlit, REST API
+	•	Identified a gap: TAC engineers were manually analyzing packet captures — slow, inconsistent, unscalable.
+	•	Designed and built an end-to-end agentic pipeline: ingests PCAP files, extracts signal, classifies fault type using LangChain + NLP, surfaces diagnosis via Streamlit.
+	•	Built feedback loop: engineers could flag incorrect classifications, feeding back into model retraining.
+	•	Achieved 80% classification accuracy on 10K+ daily captures.
+	•	Pitched to Cisco TAC engineering leadership with live demo and before/after metrics.
+	•	Adopted as a permanent product feature used by engineers globally.
+Tags
+	•	LLM Agent
+	•	LangChain
+	•	Python
+	•	NLP
+	•	Streamlit
+	•	Shipped to Production
+	•	Feedback Loop
+Portfolio Note: FLAGSHIP project. Use as hero case study. Story arc: problem -> design -> build -> pitch -> adoption -> feedback loop.
+AI Knowledge Management Project (BIG Consulting, UIUC)
+Status: In progress (client NDA)
+Context: BIG Consulting, UIUC
+Tech Stack: Python, LLM Pipelines, RAG, Structured + Unstructured Data Ingestion
+	•	Prototyped an LLM-powered knowledge base to ingest and surface information from structured and unstructured sources for a B2B software client.
+	•	Designed the full product lifecycle: stakeholder interviews, PRD, competitor analysis, MVP scoping, prototype build, and client presentations.
+	•	Enabling smarter clinical and operational information retrieval workflows.
+Tags
+	•	LLM
+	•	RAG
+	•	Healthcare
+	•	Product Management
+	•	Consulting
+	•	NDA
+Portfolio Note: Second most prominent project. Feature as current work. Do not name client.
+Threat & Risk Analytics Platform
+Status: Ongoing
+GitHub: github.com/aagamshah15/threat-risk-analytics-platform
+Context: UIUC personal project
+Tech Stack: Python, Docker Compose, PostgreSQL, MinIO, dbt Core, DuckDB, Apache Airflow
+	•	Built a production-style, cloud-portable analytics engineering platform.
+	•	Implemented ELT pipelines with Bronze / Staging / Marts layered architecture.
+	•	Automated data quality checks using dbt tests at each pipeline layer.
+	•	Enabled fast local OLAP analysis using DuckDB for risk assessment and storytelling.
+	•	Modular pipeline design optimized for scalability and future Airflow orchestration.
+Tags
+	•	Data Engineering
+	•	ELT
+	•	dbt
+	•	DuckDB
+	•	Docker
+	•	Airflow
+	•	PostgreSQL
+	•	MLOps
+Portfolio Note: Great modern data stack showcase. Show architecture diagram if possible.
+Agentic Document Q&A System
+Status: Personal project
+GitHub: Private / add link when published
+Tech Stack: Python, LangChain, FastAPI, MongoDB, FAISS, PyMuPDF
+	•	Designed an agent-driven Q&A system that ingests PDFs and emails, chunks and embeds content using FAISS, and autonomously routes queries to the right retrieval path.
+	•	Configurable system prompts, guardrails, and feedback capture to evaluate and steer agent behavior.
+	•	Built internal inspection tooling to debug agent decisions and evaluate answer quality against ground truth.
+	•	Full observability layer — makes the autonomous system inspectable and steerable.
+Tags
+	•	RAG
+	•	LangChain
+	•	Agents
+	•	MongoDB
+	•	FastAPI
+	•	FAISS
+	•	Observability
+Portfolio Note: Strong for AI/PM roles. Emphasize feedback loop and observability design.
+Loom Analytics — CSV-to-Dashboard Product
+Status: In progress / Personal project
+GitHub: github.com/aagamshah15/loom-analytics
+Tech Stack: Python, FastAPI, React, TypeScript, Vite, Tailwind CSS, Streamlit, Pandas, NumPy, SciPy, Matplotlib, Seaborn, Playwright, Netlify, Render
+	•	Built a full-stack, end-to-end CSV analytics product with three layers: a modular Python pipeline for ingestion, validation, cleaning, and analysis; a Streamlit prototype for rapid iteration; and a production React + Vite frontend backed by a FastAPI API.
+	•	Product flow designed for business users: upload a CSV, auto-detect the right specialized template (financial time-series, e-commerce, healthcare, HR/workforce), review AI-surfaced insights, approve the story, and export a shareable dashboard as a static HTML file.
+	•	Implemented YAML-driven cleaning configuration, fixture-backed pytest suite, and Playwright browser stress tests for E2E coverage.
+	•	Deployed on Netlify (frontend) and Render (backend) with full CI/CD — push to GitHub triggers automatic rebuilds on both platforms.
+Tags
+	•	Full-Stack
+	•	FastAPI
+	•	React
+	•	TypeScript
+	•	Data Pipeline
+	•	Dashboard
+	•	Product
+	•	Deployed
+Static Malware Classifier
+Status: Complete
+GitHub: github.com/aagamshah15/static-malware-classifier
+Dataset: SOMLAP — 51,408 Windows PE file samples (Kaggle)
+Tech Stack: Python, Scikit-Learn, Pandas, Seaborn, Matplotlib, JupyterLab
+	•	Built a machine learning classifier to detect malware using static analysis of Windows Portable Executable (PE) file headers — classifying files as malicious or benign without executing the code.
+	•	Compared Logistic Regression baseline (87.6% accuracy) against Random Forest, which achieved 99.6% accuracy with precision of 1.00 and recall of 0.99 on malware — reducing false negatives (missed malware) by over 95%.
+	•	Feature importance analysis revealed that malware is typically compiled with older or non-standard toolchains, leaving distinct metadata fingerprints (major linker version, subsystem version, characteristics flags) that the model learned to identify.
+Tags
+	•	ML
+	•	Cybersecurity
+	•	Random Forest
+	•	Scikit-Learn
+	•	Static Analysis
+	•	Classification
+	•	99.6% Accuracy
+Music Recommender System
+Status: In progress / Learning project
+GitHub: github.com/aagamshah15/music-recommender-system
+Dataset: HetRec 2011 Last.fm 2K — implicit feedback from real listening history
+Tech Stack: Python, Pandas, NumPy, SciPy, Scikit-Learn, Jupyter
+	•	Building a hybrid music recommendation system using collaborative filtering on the Last.fm HetRec 2011 dataset — implementing both item-item and user-user collaborative filtering on a sparse user-item matrix built from implicit play count feedback.
+	•	Implemented similar-artists function using cosine similarity and personalized user recommendations using user-user CF; saved artifacts include CSR matrices and artist/user lookup tables for efficient retrieval.
+	•	Roadmap includes Matrix Factorization (ALS/SVD), content-based filtering using tag data, hybrid scorer combining CF and CBF, and evaluation with Precision@K, Recall@K, and NDCG metrics.
+Tags
+	•	Recommender Systems
+	•	Collaborative Filtering
+	•	NLP
+	•	Python
+	•	Sparse Matrices
+	•	In Progress
+5B. Academic Projects
+Medical Insurance Cost Prediction & Risk Segmentation
+Context: IS 507 - Data, Statistical Models & Information, UIUC (Fall 2025)
+GitHub: Private / course project — add link if published
+Team: 5 members
+Dataset: 1,338 records — Medical Insurance Cost Dataset (Kaggle)
+Tech Stack: Python (Scikit-Learn, Pandas, NumPy), R, Random Forest, K-Means, GAM, Regression
+Research Questions
+	•	RQ1: How do age, BMI, and children influence charges — do nonlinear patterns amplify costs?
+	•	RQ2: Does smoking amplify the effects of age and BMI on medical charges?
+	•	RQ3: Do insurance charges differ by U.S. region after controlling for demographics?
+	•	RQ4: Can insurance charges be accurately predicted from demographic and lifestyle factors?
+	•	RQ5: Can clustering identify distinct health-risk groups differing in average charges?
+Key Findings & Metrics
+	•	Random Forest: R-squared = 0.82, MAE = $2,746 — best performance across all models.
+	•	Smoking is dominant cost driver (feature importance = 0.41), nearly double age (0.233) and BMI (0.218).
+	•	Significant BMI x Smoking multiplicative interaction (p < 0.05).
+	•	K-Means clustering identified 3 distinct health-risk segments with clear cost separation.
+	•	Regional differences disappeared after controlling for individual risk factors.
+Tags
+	•	Statistical Modeling
+	•	Random Forest
+	•	K-Means
+	•	Healthcare Analytics
+	•	Python
+	•	R
+	•	Insurance
+Portfolio Note: Show key charts (feature importance, cluster plot, model comparison). Strong academic showcase with real metrics.
+COVID-19 Data Pipeline & Analytics Platform
+Duration: January 2023 - June 2023
+GitHub: github.com/aagamshah15/PortfolioProjects
+Tableau: public.tableau.com/app/profile/aagam.shah7382/vizzes
+Tech Stack: Python (Pandas, NumPy), MS SQL Server, MySQL, Tableau, Power BI, ETL, Star Schema
+	•	Built end-to-end ETL pipeline processing 1M+ records from WHO and Our World in Data.
+	•	Multi-stage validation handling schema heterogeneity across 50+ countries — 99.5% data accuracy.
+	•	Dimensional data warehouse with star schema supporting 20+ analytical queries.
+	•	5+ Tableau and Power BI dashboards for mortality, vaccination, and case progression — published to Tableau Public.
+Key Metrics
+	•	1M+ records processed
+	•	50+ countries covered
+	•	99.5% data accuracy
+	•	Published to Tableau Public
+Tags
+	•	ETL
+	•	Data Pipeline
+	•	Tableau
+	•	Power BI
+	•	Star Schema
+	•	SQL
+	•	Public Health
+Portfolio Note: Link directly to Tableau Public dashboard. Good visual project for portfolio.
+Real-Time ML Drowsiness Detection System
+Duration: September 2021 - December 2021
+GitHub: Private / add link if published
+Role: Team Lead
+Tech Stack: Python, TensorFlow, Keras, OpenCV, Feature Engineering
+	•	Led team development of a real-time computer vision system for driver fatigue detection.
+	•	90% classification accuracy on 1,000+ images using TensorFlow/Keras deep learning model.
+	•	Feature engineering on facial landmarks and eye aspect ratio (EAR) as core features.
+	•	Data augmentation increasing training dataset by 300% and reducing overfitting by 25%.
+	•	Real-time inference pipeline processing 30 FPS from live video.
+Tags
+	•	Computer Vision
+	•	TensorFlow
+	•	Deep Learning
+	•	Real-Time ML
+	•	OpenCV
+	•	Team Lead
+Portfolio Note: Show demo GIF or screenshot if available. Relevant for vehicle/safety AI roles.
+Metaheuristic Algorithms for Cloud Task Scheduling
+Duration: February 2022 - July 2022
+Context: Independent Research, Manipal University
+	•	Developed novel metaheuristic scheduling algorithms for cloud computing environments.
+	•	Achieved 85% scheduling efficiency and 80% resource utilization against baseline methods.
+	•	Published as independent research.
+Tags
+	•	Algorithms
+	•	Cloud Computing
+	•	Optimization
+	•	Research
+Portfolio Note: Include briefly as research entry.
+
+6. Leadership & Extracurriculars
+
+Treasurer - MUJ ACM Student Chapter
+Organization: ACM (Association for Computing Machinery), Manipal University Jaipur
+Duration: May 2021 - May 2022
+	•	Managed financial operations and chapter budget for a community of 1,000+ students.
+	•	Coordinated cross-functional teams for workshops, hackathons, coding competitions, and campus events.
+	•	Led chapter recruitment strategy — contributed to winning Best Recruitment Award Globally (2021-22).
+	•	Contributed to operations earning the ACM Outstanding Chapter Award (2021-22).
+Awards
+	•	ACM Outstanding Chapter Award - 2021-22
+	•	Best Recruitment Award Globally - 2021-22
+Tags
+	•	Leadership
+	•	Community
+	•	ACM
+	•	Awards
+Portfolio Note: Show award badges. Strong character signal for PM and consulting roles.
+
+7. Portfolio Display Recommendations
+
+Suggested Website Structure
+	•	Home / Hero — Short bio + tagline + key stats + CTA (View Work / Contact)
+	•	About — Long bio + photo + education timeline + certifications
+	•	Experience — Timeline view: BIG Consulting -> Cisco Full-Time -> Cisco Intern
+	•	Projects — Card grid: Featured projects + All filterable by tag
+	•	Skills — Category cards with tag clouds or grouped visual cards
+	•	Resume — Downloadable resumes by role type
+	•	Contact — Email + LinkedIn + Tableau Public
+Featured Projects for Homepage (recommended order)
+	•	1. AI Packet Analysis Agent (Cisco) — flagship, shipped to production, complete story arc
+	•	2. AI Knowledge Management Project — current, PM-relevant, healthcare domain
+	•	3. Medical Insurance Prediction — strong academic project, real metrics, domain-relevant
+	•	4. COVID-19 Analytics Platform — visual, links to Tableau Public
+Key Stats to Feature as Animated Counters
+	•	500+ enterprise clients managed globally
+	•	50+ RCAs authored
+	•	100K+ daily events processed in production
+	•	1M+ records in ETL pipeline
+	•	90% user satisfaction on AI chatbot
+	•	80% ML classification accuracy
+	•	R-squared = 0.82 on insurance prediction
+	•	99.5% data accuracy across 50+ countries
+	•	GPA: 3.89 / 4.0 at UIUC
+Resume Download Versions
+	•	Data Engineering — Granica, Rivian
+	•	Analytics / BI — MetLife, ZS, ADM, KLA
+	•	Product Management — BillionToOne, SOLIDWORKS, Ditto
+	•	AI / Prompt Engineering — Aon, Aurora
+	•	Technical Support / TAC — IBM, Cisco-style roles
+Portfolio Note: Offer role-specific resume downloads on the Resume page so visitors self-select the most relevant version.
