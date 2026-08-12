@@ -5,285 +5,323 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aagam Shah | Data & AI Product Professional</title>
     <meta name="description" content="Aagam Shah builds systems at the intersection of AI engineering and product thinking—from LLM-powered pipelines to autonomous agents and dashboards.">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://aagamshah15.github.io/AagamPortfolio/">
+    <meta property="og:title" content="Aagam Shah | Data & AI Product Professional">
+    <meta property="og:description" content="Aagam Shah builds systems at the intersection of AI engineering and product thinking—from LLM-powered pipelines to autonomous agents and dashboards.">
+    <meta property="og:image" content="https://aagamshah15.github.io/AagamPortfolio/images/avatar.png">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Aagam Shah | Data & AI Product Professional">
+    <meta name="twitter:description" content="Aagam Shah builds systems at the intersection of AI engineering and product thinking—from LLM-powered pipelines to autonomous agents and dashboards.">
+    <meta name="twitter:image" content="https://aagamshah15.github.io/AagamPortfolio/images/avatar.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="assets/css/style.css">
-    <!-- Font Awesome for icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <style>
-        .stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 1rem; margin-top: 1.5rem; }
-        .stat-card { background: var(--card-bg); border: 1px solid var(--card-border); padding: 1.5rem; text-align: center; border-radius: 0.75rem; }
-        .stat-number { font-size: 2.2rem; font-family: 'Sora', sans-serif; font-weight: 800; color: var(--accent-color); margin-bottom: 0.25rem; }
-        .stat-label { font-size: 0.8rem; color: var(--text-secondary); font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; }
-    </style>
 </head>
 <body>
 
-    <!-- Navigation -->
-    <nav class="navbar">
-        <a href="#hero" class="logo">Aagam Shah</a>
-        <div class="nav-links">
-            <a href="#about">About</a>
-            <a href="#experience">Experience</a>
-            <a href="#work">Projects</a>
-            <a href="#contact">Contact</a>
-            <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark/light mode">
-                <i class="fa-solid fa-moon"></i>
+    <div class="wrap">
+        <nav>
+            <a href="#" class="mark"><span class="brace">&lt;</span>Aagam Shah<span class="brace">/&gt;</span></a>
+            <div class="nav-links">
+                <a href="#about">about</a>
+                <a href="#experience">experience</a>
+                <a href="#education">education</a>
+                <a href="#work">work</a>
+                <a href="#contact">contact</a>
+            </div>
+            <button class="theme-btn" id="themeBtn" aria-label="Cycle theme">
+                <svg id="themeIcon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 3v18" stroke-dasharray="2 2"/></svg>
+                <span id="themeLabel">system</span>
             </button>
-        </div>
-    </nav>
+        </nav>
 
-    <!-- Hero Section -->
-    <section id="hero" style="min-height: 85vh;">
-        <div class="avatar-container" style="margin-bottom: 1.5rem;">
-            <img src="images/avatar.png" alt="Aagam Shah">
-        </div>
-        <h1 class="hero-title" style="font-size: clamp(2rem, 4vw, 3.5rem);">Building AI systems that think in feedback loops.</h1>
-        <p class="hero-subtitle" style="font-size: 1.1rem; max-width: 650px;">
-            Data & AI product builder focused on LLM pipelines, autonomous agents, and product strategy. Ex-Cisco engineer, currently pursuing MSIM at UIUC.
-        </p>
-        <div class="hero-actions">
-            <a href="#work" class="btn btn-primary">View Featured Work</a>
-            <a href="#contact" class="btn btn-secondary">Get in Touch</a>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" style="padding-top: 2rem;">
-        <h2 class="section-title">About Me</h2>
-        
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; align-items: center; margin-bottom: 3rem;">
-            <div class="card" style="padding: 2rem;">
-                <p style="font-size: 1.05rem; line-height: 1.7;">
-                    I translate technical complexity into products people actually use. Previously at <strong>Cisco Systems</strong>, I built ML pipelines and AI agents for enterprise security clients, shipping features to global production. 
-                    <br><br>
-                    Currently an Associate Consultant at <strong>UIUC BIG</strong>, I design LLM-powered knowledge bases and own products end-to-end. I care about building reliable systems that solve real user problems.
-                </p>
-            </div>
-            
-            <div class="stats-grid" style="margin-top: 0;">
-                <div class="stat-card">
-                    <div class="stat-number">500+</div>
-                    <div class="stat-label">Enterprise Clients</div>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-number">100K+</div>
-                    <div class="stat-label">Daily Events</div>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-number">90%</div>
-                    <div class="stat-label">AI Satisfaction</div>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-number">99.5%</div>
-                    <div class="stat-label">Data Accuracy</div>
-                </div>
+        <div class="nav-pill" id="navPill">
+            <a href="#" class="mark">&lt;AS/&gt;</a>
+            <div class="nav-links">
+                <a href="#about">about</a>
+                <a href="#experience">exp</a>
+                <a href="#education">edu</a>
+                <a href="#work">work</a>
+                <a href="#contact">contact</a>
             </div>
         </div>
 
-        <div class="skills-container">
-            <div class="skill-grid" style="grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 1rem;">
-                <div class="card" style="padding: 1.2rem;">
-                    <h4 style="color: var(--accent-color); margin-bottom: 0.5rem; font-size: 0.9rem; text-transform: uppercase;">AI & LLMs</h4>
-                    <p style="font-size: 0.85rem; color: var(--text-secondary);">LangChain, Claude API, OpenAI, RAG, Prompt Eng</p>
+        <section id="about" class="hero">
+            <div class="editor">
+                <div class="editor-bar">
+                    <span class="editor-dot red"></span><span class="editor-dot yellow"></span><span class="editor-dot green"></span>
+                    <span class="editor-file">identity.ts</span>
                 </div>
-                <div class="card" style="padding: 1.2rem;">
-                    <h4 style="color: var(--accent-color); margin-bottom: 0.5rem; font-size: 0.9rem; text-transform: uppercase;">Data Engineering</h4>
-                    <p style="font-size: 0.85rem; color: var(--text-secondary);">dbt Core, Airflow, DuckDB, MinIO, Star Schema</p>
-                </div>
-                <div class="card" style="padding: 1.2rem;">
-                    <h4 style="color: var(--accent-color); margin-bottom: 0.5rem; font-size: 0.9rem; text-transform: uppercase;">Machine Learning</h4>
-                    <p style="font-size: 0.85rem; color: var(--text-secondary);">Scikit-Learn, TensorFlow, Random Forest, K-Means</p>
-                </div>
-                <div class="card" style="padding: 1.2rem;">
-                    <h4 style="color: var(--accent-color); margin-bottom: 0.5rem; font-size: 0.9rem; text-transform: uppercase;">Product & BI</h4>
-                    <p style="font-size: 0.85rem; color: var(--text-secondary);">Tableau, Power BI, PRDs, Agile, Roadmapping</p>
+                <div class="editor-body" id="editorBody">
+                    <div><span class="ln">1</span><span class="kw">const</span> <span class="fn">aagamShah</span> <span class="punc">=</span> <span class="punc">{</span></div>
+                    <div><span class="ln">2</span>&nbsp;&nbsp;<span class="key">role</span><span class="punc">:</span> <span class="str">"Data &amp; AI Product Builder"</span><span class="punc">,</span></div>
+                    <div><span class="ln">3</span>&nbsp;&nbsp;<span class="key">focus</span><span class="punc">:</span> <span class="punc">[</span><span class="str">"LLM Pipelines"</span><span class="punc">,</span> <span class="str">"Agentic Workflows"</span><span class="punc">,</span> <span class="str">"Analytics"</span><span class="punc">]</span><span class="punc">,</span></div>
+                    <div><span class="ln">4</span>&nbsp;&nbsp;<span class="key">base</span><span class="punc">:</span> <span class="str">"Champaign, IL"</span><span class="punc">,</span></div>
+                    <div><span class="ln">5</span>&nbsp;&nbsp;<span class="key">education</span><span class="punc">:</span> <span class="str">"MS Info. Mgmt @ UIUC"</span><span class="punc">,</span></div>
+                    <div><span class="ln">6</span>&nbsp;&nbsp;<span class="key">previously</span><span class="punc">:</span> <span class="str">"Technical Consulting Engineer @ Cisco"</span><span class="punc">,</span></div>
+                    <div><span class="ln">7</span>&nbsp;&nbsp;<span class="key">status</span><span class="punc">:</span> <span class="str">"open_to_opportunities"</span><span class="cursor-blink"></span></div>
+                    <div><span class="ln">8</span><span class="punc">}</span><span class="punc">;</span></div>
                 </div>
             </div>
-        </div>
-    </section>
 
-    <!-- Experience Section -->
-    <section id="experience">
-        <h2 class="section-title">Experience</h2>
-        <div class="timeline">
-            
-            <div class="timeline-item">
-                <div class="card">
-                    <div class="meta" style="display: flex; justify-content: space-between;">
-                        <span>Associate Consultant</span>
-                        <span>UIUC BIG</span>
+            <div class="hero-actions">
+                <a href="#work" class="btn btn-primary">./view-work</a>
+                <a href="#contact" class="btn btn-secondary">./get-in-touch</a>
+            </div>
+
+            <div class="readout">
+                <div>500+ enterprise clients managed</div>
+                <div>100K+ daily events processed</div>
+                <div>90% AI chatbot satisfaction</div>
+                <div>99.5% pipeline data accuracy</div>
+            </div>
+        </section>
+
+        <section class="reveal">
+            <p class="pull-quote" id="pullQuote">I make complex systems understandable — from packet captures at Cisco to LLM pipelines at UIUC, the job is the same: find what's actually broken, then build the thing that fixes it.</p>
+        </section>
+
+        <section id="experience" class="reveal">
+            <div class="section-head">
+                <div class="section-eyebrow">$ cat experience.log</div>
+                <h2 class="section-title">Experience</h2>
+            </div>
+
+            <div class="timeline-row">
+                <div class="prompt">$</div>
+                <div>
+                    <div class="timeline-date">2026 — present</div>
+                    <div class="timeline-org">BIG Consulting · UIUC</div>
+                    <div class="timeline-role">Associate Consultant, AI Knowledge Management</div>
+                    <div class="timeline-desc">Leading product development for a B2B client's LLM-powered knowledge base under NDA — PRDs, stakeholder interviews, RAG prototyping.</div>
+                </div>
+            </div>
+            <div class="timeline-row">
+                <div class="prompt">$</div>
+                <div>
+                    <div class="timeline-date">2023 — 2025</div>
+                    <div class="timeline-org">Cisco Systems</div>
+                    <div class="timeline-role">Technical Consulting Engineer, Enterprise Security &amp; AI</div>
+                    <div class="timeline-desc">Shipped an AI packet-analysis agent to global production (LangChain + NLP). Managed 500+ Fortune 500 engagements, 100K+ daily events.</div>
+                </div>
+            </div>
+            <div class="timeline-row">
+                <div class="prompt">$</div>
+                <div>
+                    <div class="timeline-date">2023</div>
+                    <div class="timeline-org">Cisco Systems</div>
+                    <div class="timeline-role">Software Engineering Intern</div>
+                    <div class="timeline-desc">Built an AI chatbot for document search and ticket routing — 90% user satisfaction, 85% classification accuracy, RAG pipeline over MongoDB.</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="education" class="reveal">
+            <div class="section-head">
+                <div class="section-eyebrow">$ cat education.log</div>
+                <h2 class="section-title">Education</h2>
+            </div>
+
+            <div class="timeline-row">
+                <div class="prompt">$</div>
+                <div>
+                    <div class="timeline-date">2025 — 2027</div>
+                    <div class="timeline-org">University of Illinois, Urbana-Champaign</div>
+                    <div class="timeline-role">MS, Information Management — GPA 3.89/4.0</div>
+                    <div class="timeline-desc">Coursework in data engineering, AI systems evaluation, and applied analytics. Associate Consultant with BIG Consulting alongside the degree.</div>
+                </div>
+            </div>
+            <div class="timeline-row">
+                <div class="prompt">$</div>
+                <div>
+                    <div class="timeline-date">2019 — 2023</div>
+                    <div class="timeline-org">Manipal University, Jaipur</div>
+                    <div class="timeline-role">B.Tech, Computer &amp; Communication Engineering — Minor, Data Science</div>
+                    <div class="timeline-desc">CGPA 8.81/10. Foundation in data structures, ML, and database systems ahead of the Cisco and UIUC chapters.</div>
+                </div>
+            </div>
+
+            <div class="cert-row">
+                <div class="section-eyebrow">$ ls certifications/</div>
+                <div class="cert-list">
+                    <div class="cert-badge"><span>✓</span> Cisco DevNet Associate</div>
+                    <div class="cert-badge"><span>✓</span> Cisco CCNA</div>
+                    <div class="cert-badge"><span>✓</span> Google Data Analytics Professional</div>
+                </div>
+            </div>
+
+            <div class="assets-note">// places along the way</div>
+            <div class="assets-grid">
+                <div class="asset-slot filled">
+                    <img src="images/manipal-web.jpg" alt="Aagam at Manipal University, Jaipur" loading="lazy">
+                    <div class="caption-bar"><span class="fname">manipal.jpg</span><span>B.Tech · 2019–23</span></div>
+                </div>
+                <div class="asset-slot filled">
+                    <img src="images/bangalore-web.jpg" alt="Aagam at the Cisco campus in Bangalore" loading="lazy">
+                    <div class="caption-bar"><span class="fname">bangalore.jpg</span><span>Cisco · 2023–25</span></div>
+                </div>
+                <div class="asset-slot filled">
+                    <img src="images/champaign-web.jpg" alt="Aagam at Memorial Stadium, University of Illinois" loading="lazy">
+                    <div class="caption-bar"><span class="fname">champaign.jpg</span><span>UIUC · 2025–27</span></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="work" class="reveal">
+            <div class="carousel-head">
+                <div class="section-head" style="margin-bottom:0;">
+                    <div class="section-eyebrow">$ ls ~/projects</div>
+                    <h2 class="section-title">Selected Work</h2>
+                </div>
+                <div class="carousel-controls">
+                    <button class="carousel-btn" id="prevBtn" aria-label="Scroll left"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg></button>
+                    <button class="carousel-btn" id="nextBtn" aria-label="Scroll right"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg></button>
+                </div>
+            </div>
+
+            <div class="carousel" id="carousel">
+                <div class="proj-card">
+                    <div class="proj-art p1"></div>
+                    <div class="proj-body">
+                        <div class="proj-tag">Shipped to Production</div>
+                        <div class="proj-title">AI Packet Analysis Agent</div>
+                        <div class="proj-desc">Agentic pipeline classifying network fault types with LangChain + NLP. 80% accuracy on 10K+ daily captures.</div>
+                        <div class="proj-proof locked">proprietary — internal to cisco</div>
                     </div>
-                    <h3 style="margin-top: 0.25rem;">AI Knowledge Management</h3>
-                    <p style="margin-top: 0.5rem; font-size: 0.95rem; color: var(--text-secondary);">
-                        Led product development for an LLM-powered knowledge base for a B2B client. Authored PRDs, conducted user interviews, and prototyped RAG pipelines.
-                    </p>
                 </div>
-            </div>
-
-            <div class="timeline-item">
-                <div class="card">
-                    <div class="meta" style="display: flex; justify-content: space-between;">
-                        <span>Technical Consulting Engineer</span>
-                        <span>Cisco Systems</span>
+                <div class="proj-card">
+                    <div class="proj-art p2"></div>
+                    <div class="proj-body">
+                        <div class="proj-tag">UIUC Consulting</div>
+                        <div class="proj-title">Clinical AI Knowledge Base</div>
+                        <div class="proj-desc">LLM-powered retrieval system for a B2B healthcare client. Owned full lifecycle from PRD scoping to MVP prototype.</div>
+                        <div class="proj-proof locked">nda — client confidential</div>
                     </div>
-                    <h3 style="margin-top: 0.25rem;">Enterprise Security & AI</h3>
-                    <p style="margin-top: 0.5rem; font-size: 0.95rem; color: var(--text-secondary);">
-                        Shipped an AI-powered NLP packet analysis agent to global production. Managed 500+ Fortune 500 client engagements and processed 100K+ daily network events.
-                    </p>
                 </div>
-            </div>
-
-            <div class="timeline-item">
-                <div class="card">
-                    <div class="meta" style="display: flex; justify-content: space-between;">
-                        <span>MS Information Management (3.89 GPA)</span>
-                        <span>UIUC (Exp. 2027)</span>
+                <div class="proj-card">
+                    <div class="proj-art p3"></div>
+                    <div class="proj-body">
+                        <div class="proj-tag">Data Engineering</div>
+                        <div class="proj-title">Threat &amp; Risk Analytics Platform</div>
+                        <div class="proj-desc">Cloud-portable ELT platform — PostgreSQL, MinIO, dbt Core, DuckDB — with automated data-quality checks.</div>
+                        <div class="proj-proof"><a href="https://github.com/aagamshah15/threat-risk-analytics-platform" target="_blank" rel="noopener">→ github</a></div>
                     </div>
-                    <h3 style="margin-top: 0.25rem;">Education Highlight</h3>
-                    <p style="margin-top: 0.5rem; font-size: 0.95rem; color: var(--text-secondary);">
-                        Focus on Data Engineering, AI Systems Evaluation, and Applied Analytics. Prior B.Tech from Manipal University (Minor in Data Science).
-                    </p>
+                </div>
+                <div class="proj-card">
+                    <div class="proj-art p4"></div>
+                    <div class="proj-body">
+                        <div class="proj-tag">Agents &amp; RAG</div>
+                        <div class="proj-title">Agentic Document Q&amp;A</div>
+                        <div class="proj-desc">LangChain + FastAPI system that chunks/embeds PDFs and autonomously routes queries with a full observability layer.</div>
+                        <div class="proj-proof locked">private repo — not yet published</div>
+                    </div>
+                </div>
+                <div class="proj-card">
+                    <div class="proj-art p1"></div>
+                    <div class="proj-body">
+                        <div class="proj-tag">Full-Stack Product</div>
+                        <div class="proj-title">Loom Analytics</div>
+                        <div class="proj-desc">CSV-to-dashboard product. React + FastAPI, auto-detects templates, generates AI-surfaced insights.</div>
+                        <div class="proj-proof"><a href="https://github.com/aagamshah15/loom-analytics" target="_blank" rel="noopener">→ github</a></div>
+                    </div>
+                </div>
+                <div class="proj-card">
+                    <div class="proj-art p2"></div>
+                    <div class="proj-body">
+                        <div class="proj-tag">Academic Research</div>
+                        <div class="proj-title">Medical Cost Prediction</div>
+                        <div class="proj-desc">Random Forest (R²=0.82) and K-Means on 1.3K records to segment health-risk demographics.</div>
+                        <div class="proj-proof locked">course project — repo private</div>
+                    </div>
+                </div>
+                <div class="proj-card">
+                    <div class="proj-art p3"></div>
+                    <div class="proj-body">
+                        <div class="proj-tag">Data Pipeline</div>
+                        <div class="proj-title">COVID-19 Analytics Platform</div>
+                        <div class="proj-desc">ETL for 1M+ WHO/OWID records into a star-schema warehouse. 99.5% accuracy across 50+ countries.</div>
+                        <div class="proj-proof"><a href="https://github.com/aagamshah15/PortfolioProjects" target="_blank" rel="noopener">→ github</a> &nbsp;·&nbsp; <a href="https://public.tableau.com/views/GlobalCOVID-19MortalityTrendsForecastInsights/Dashboard1?:language=en-US&amp;:sid=&amp;:redirect=auth&amp;:display_count=n&amp;:origin=viz_share_link" target="_blank" rel="noopener">→ tableau</a></div>
+                    </div>
+                </div>
+                <div class="proj-card">
+                    <div class="proj-art p4"></div>
+                    <div class="proj-body">
+                        <div class="proj-tag">Machine Learning</div>
+                        <div class="proj-title">Static Malware Classifier</div>
+                        <div class="proj-desc">Random Forest on PE-header static analysis. 99.6% accuracy across 51K Windows samples.</div>
+                        <div class="proj-proof"><a href="https://github.com/aagamshah15/static-malware-classifier" target="_blank" rel="noopener">→ github</a></div>
+                    </div>
+                </div>
+                <div class="proj-card">
+                    <div class="proj-art p1"></div>
+                    <div class="proj-body">
+                        <div class="proj-tag">Computer Vision</div>
+                        <div class="proj-title">Real-Time ML Drowsiness Detection</div>
+                        <div class="proj-desc">Real-time CV system for driver fatigue. 90% accuracy processing 30 FPS video using TensorFlow and OpenCV.</div>
+                        <div class="proj-proof locked">private repo — not yet published</div>
+                    </div>
+                </div>
+                <div class="proj-card">
+                    <div class="proj-art p2"></div>
+                    <div class="proj-body">
+                        <div class="proj-tag">Algorithms</div>
+                        <div class="proj-title">Cloud Task Scheduling</div>
+                        <div class="proj-desc">Independent research on novel metaheuristic scheduling algorithms. 85% efficiency and 80% resource utilization.</div>
+                        <div class="proj-proof locked">independent research — no repo</div>
+                    </div>
+                </div>
+                <div class="proj-card">
+                    <div class="proj-art p3"></div>
+                    <div class="proj-body">
+                        <div class="proj-tag">Recommender Systems</div>
+                        <div class="proj-title">Music Recommender</div>
+                        <div class="proj-desc">Hybrid system using collaborative filtering on sparse user-item matrices built from implicit play-count feedback.</div>
+                        <div class="proj-proof"><a href="https://github.com/aagamshah15/music-recommender-system" target="_blank" rel="noopener">→ github</a></div>
+                    </div>
                 </div>
             </div>
 
-        </div>
-    </section>
-
-    <!-- Work/Projects Section -->
-    <section id="work">
-        <h2 class="section-title">Projects</h2>
-        <div class="card-grid">
-            
-            <div class="card">
-                <div class="meta">Shipped to Production</div>
-                <h3>AI Packet Analysis Agent (Cisco)</h3>
-                <p style="margin-top: 0.75rem; font-size: 0.95rem;">
-                    End-to-end agentic pipeline that classifies fault types using LangChain + NLP. Reached 80% accuracy on 10K+ captures.
-                </p>
+            <div class="dashboard-viewport">
+                <div class="dv-header">
+                    <span class="pulse"></span>live — COVID-19 Mortality Trends &amp; Forecast Insights
+                    <a href="https://public.tableau.com/views/GlobalCOVID-19MortalityTrendsForecastInsights/Dashboard1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link" target="_blank" rel="noopener">open ↗</a>
+                </div>
+                <div class="dv-body">
+                    <iframe
+                        src="https://public.tableau.com/views/GlobalCOVID-19MortalityTrendsForecastInsights/Dashboard1?:showVizHome=no&:embed=true&:language=en-US"
+                        title="COVID-19 Mortality Trends & Forecast Insights — live Tableau dashboard"
+                        loading="lazy"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="dv-caption">If the dashboard above doesn't load, <a href="https://public.tableau.com/views/GlobalCOVID-19MortalityTrendsForecastInsights/Dashboard1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link" target="_blank" rel="noopener">open it directly on Tableau Public →</a></div>
             </div>
+        </section>
 
-            <div class="card">
-                <div class="meta">UIUC Consulting</div>
-                <h3>Clinical AI Knowledge Base</h3>
-                <p style="margin-top: 0.75rem; font-size: 0.95rem;">
-                    LLM-powered retrieval system designed for a B2B healthcare client. Owned full lifecycle from PRD scoping to MVP prototype.
-                </p>
+        <section id="contact" class="reveal" style="padding-bottom: 90px;">
+            <div class="section-head">
+                <div class="section-eyebrow">$ ./contact --help</div>
+                <h2 class="section-title">Get in Touch</h2>
             </div>
-
-            <div class="card">
-                <div class="meta">Data Engineering</div>
-                <h3>Threat & Risk Analytics</h3>
-                <p style="margin-top: 0.75rem; font-size: 0.95rem; margin-bottom: 1.5rem;">
-                    Cloud-portable ELT platform using PostgreSQL, MinIO, dbt Core, and DuckDB with automated data quality checks.
-                </p>
-                <div style="margin-top: auto;">
-                    <a href="https://github.com/aagamshah15/threat-risk-analytics-platform" target="_blank" style="color: var(--text-secondary); text-decoration: none; font-size: 0.9rem; font-weight: 500;"><i class="fa-brands fa-github" style="margin-right: 0.3rem;"></i> View Code</a>
+            <div class="contact-block">
+                <div class="contact-line"><span class="prompt">$</span> echo "Always open to discussing AI products, agentic workflows, or analytics engineering."</div>
+                <div class="contact-cmds">
+                    <a href="mailto:aps22@illinois.edu"><span class="gt">&gt;</span>email</a>
+                    <a href="https://github.com/aagamshah15" target="_blank" rel="noopener"><span class="gt">&gt;</span>github</a>
+                    <a href="https://linkedin.com/in/aagamshah157" target="_blank" rel="noopener"><span class="gt">&gt;</span>linkedin</a>
+                    <a href="https://public.tableau.com/app/profile/aagam.shah7382" target="_blank" rel="noopener"><span class="gt">&gt;</span>tableau</a>
                 </div>
             </div>
+        </section>
 
-            <div class="card">
-                <div class="meta">Agents & RAG</div>
-                <h3>Agentic Document Q&A</h3>
-                <p style="margin-top: 0.75rem; font-size: 0.95rem;">
-                    LangChain and FastAPI system that chunks/embeds PDFs and autonomously routes queries with a full observability layer.
-                </p>
-            </div>
+        <footer>// © <span id="year"></span> Aagam Shah — built with modern web standards</footer>
+    </div>
 
-            <div class="card">
-                <div class="meta">Full-Stack Product</div>
-                <h3>Loom Analytics</h3>
-                <p style="margin-top: 0.75rem; font-size: 0.95rem; margin-bottom: 1.5rem;">
-                    End-to-end CSV analytics product. React + FastAPI architecture that auto-detects templates and generates AI insights.
-                </p>
-                <div style="margin-top: auto;">
-                    <a href="https://github.com/aagamshah15/loom-analytics" target="_blank" style="color: var(--text-secondary); text-decoration: none; font-size: 0.9rem; font-weight: 500;"><i class="fa-brands fa-github" style="margin-right: 0.3rem;"></i> View Code</a>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="meta">Academic Research</div>
-                <h3>Medical Cost Prediction</h3>
-                <p style="margin-top: 0.75rem; font-size: 0.95rem;">
-                    Analyzed 1.3K records using Random Forest (R²=0.82) and K-Means to identify distinct health-risk demographic clusters.
-                </p>
-            </div>
-
-            <div class="card">
-                <div class="meta">Data Pipeline</div>
-                <h3>COVID-19 Analytics Platform</h3>
-                <p style="margin-top: 0.75rem; font-size: 0.95rem; margin-bottom: 1.5rem;">
-                    ETL pipeline processing 1M+ records into a star schema data warehouse with 99.5% accuracy, visualized in Tableau.
-                </p>
-                <div style="margin-top: auto; display: flex; gap: 1rem;">
-                    <a href="https://github.com/aagamshah15/PortfolioProjects" target="_blank" style="color: var(--text-secondary); text-decoration: none; font-size: 0.9rem; font-weight: 500;"><i class="fa-brands fa-github" style="margin-right: 0.3rem;"></i> View Code</a>
-                    <a href="https://public.tableau.com/app/profile/aagam.shah7382/vizzes" target="_blank" style="color: var(--text-secondary); text-decoration: none; font-size: 0.9rem; font-weight: 500;"><i class="fa-solid fa-chart-bar" style="margin-right: 0.3rem;"></i> View Dashboard</a>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="meta">Machine Learning</div>
-                <h3>Static Malware Classifier</h3>
-                <p style="margin-top: 0.75rem; font-size: 0.95rem; margin-bottom: 1.5rem;">
-                    ML classifier to detect malware via static analysis of PE headers. Random Forest achieved 99.6% accuracy on 51K samples.
-                </p>
-                <div style="margin-top: auto;">
-                    <a href="https://github.com/aagamshah15/static-malware-classifier" target="_blank" style="color: var(--text-secondary); text-decoration: none; font-size: 0.9rem; font-weight: 500;"><i class="fa-brands fa-github" style="margin-right: 0.3rem;"></i> View Code</a>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="meta">Computer Vision</div>
-                <h3>Real-Time ML Drowsiness Detection</h3>
-                <p style="margin-top: 0.75rem; font-size: 0.95rem;">
-                    Real-time CV system for driver fatigue. Achieved 90% accuracy processing 30 FPS video using TensorFlow and OpenCV.
-                </p>
-            </div>
-
-            <div class="card">
-                <div class="meta">Algorithms</div>
-                <h3>Cloud Task Scheduling</h3>
-                <p style="margin-top: 0.75rem; font-size: 0.95rem;">
-                    Independent research on novel metaheuristic scheduling algorithms. Achieved 85% efficiency and 80% resource utilization.
-                </p>
-            </div>
-
-            <div class="card">
-                <div class="meta">Recommender Systems</div>
-                <h3>Music Recommender</h3>
-                <p style="margin-top: 0.75rem; font-size: 0.95rem; margin-bottom: 1.5rem;">
-                    Hybrid system using collaborative filtering on sparse user-item matrices built from implicit play count feedback.
-                </p>
-                <div style="margin-top: auto;">
-                    <a href="https://github.com/aagamshah15/music-recommender-system" target="_blank" style="color: var(--text-secondary); text-decoration: none; font-size: 0.9rem; font-weight: 500;"><i class="fa-brands fa-github" style="margin-right: 0.3rem;"></i> View Code</a>
-                </div>
-            </div>
-
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" style="padding-bottom: 6rem;">
-        <h2 class="section-title">Get in Touch</h2>
-        <div class="card" style="text-align: center; max-width: 700px; margin: 0 auto; padding: 3rem 2rem;">
-            <p style="font-size: 1.1rem; margin-bottom: 2rem;">
-                Always open to discussing AI products, agentic workflows, or analytics engineering!
-            </p>
-            <div class="social-links" style="margin-bottom: 0;">
-                <a href="mailto:aps22@illinois.edu" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
-                <a href="https://github.com/aagamshah15" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
-                <a href="https://linkedin.com/in/aagamshah157" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="https://public.tableau.com/app/profile/aagam.shah7382" target="_blank" aria-label="Tableau"><i class="fa-solid fa-chart-bar"></i></a>
-            </div>
-        </div>
-    </section>
-
-    <footer style="padding: 2rem; border-top: 1px solid var(--card-border); text-align: center;">
-        <p style="font-size: 0.85rem; color: var(--text-secondary);">&copy; <span id="year"></span> Aagam Shah. Built with modern web standards.</p>
-    </footer>
-
-    <!-- Theme Logic Script -->
-    <script src="assets/js/theme.js"></script>
-    <script>
-        document.getElementById('year').textContent = new Date().getFullYear();
-    </script>
+    <script src="assets/js/main.js"></script>
 </body>
 </html>
