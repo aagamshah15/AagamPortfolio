@@ -52,21 +52,21 @@
             </div>
         </div>
 
-        <section id="about" class="hero">
+        <section class="hero">
             <div class="editor">
                 <div class="editor-bar">
                     <span class="editor-dot red"></span><span class="editor-dot yellow"></span><span class="editor-dot green"></span>
-                    <span class="editor-file">identity.ts</span>
+                    <span class="editor-file">identity.py</span>
                 </div>
                 <div class="editor-body" id="editorBody">
-                    <div><span class="ln">1</span><span class="kw">const</span> <span class="fn">aagamShah</span> <span class="punc">=</span> <span class="punc">{</span></div>
-                    <div><span class="ln">2</span>&nbsp;&nbsp;<span class="key">role</span><span class="punc">:</span> <span class="str">"Data &amp; AI Product Builder"</span><span class="punc">,</span></div>
-                    <div><span class="ln">3</span>&nbsp;&nbsp;<span class="key">focus</span><span class="punc">:</span> <span class="punc">[</span><span class="str">"LLM Pipelines"</span><span class="punc">,</span> <span class="str">"Agentic Workflows"</span><span class="punc">,</span> <span class="str">"Analytics"</span><span class="punc">]</span><span class="punc">,</span></div>
-                    <div><span class="ln">4</span>&nbsp;&nbsp;<span class="key">base</span><span class="punc">:</span> <span class="str">"Champaign, IL"</span><span class="punc">,</span></div>
-                    <div><span class="ln">5</span>&nbsp;&nbsp;<span class="key">education</span><span class="punc">:</span> <span class="str">"MS Info. Mgmt @ UIUC"</span><span class="punc">,</span></div>
-                    <div><span class="ln">6</span>&nbsp;&nbsp;<span class="key">previously</span><span class="punc">:</span> <span class="str">"Technical Consulting Engineer @ Cisco"</span><span class="punc">,</span></div>
-                    <div><span class="ln">7</span>&nbsp;&nbsp;<span class="key">status</span><span class="punc">:</span> <span class="str">"open_to_opportunities"</span><span class="cursor-blink"></span></div>
-                    <div><span class="ln">8</span><span class="punc">}</span><span class="punc">;</span></div>
+                    <div><span class="ln">1</span><span class="fn">aagam_shah</span> <span class="punc">=</span> <span class="punc">{</span></div>
+                    <div><span class="ln">2</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="key">"role"</span><span class="punc">:</span> <span class="str">"Data &amp; AI Product Builder"</span><span class="punc">,</span></div>
+                    <div><span class="ln">3</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="key">"focus"</span><span class="punc">:</span> <span class="punc">[</span><span class="str">"LLM Pipelines"</span><span class="punc">,</span> <span class="str">"Agentic Workflows"</span><span class="punc">,</span> <span class="str">"Analytics"</span><span class="punc">]</span><span class="punc">,</span></div>
+                    <div><span class="ln">4</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="key">"base"</span><span class="punc">:</span> <span class="str">"Champaign, IL"</span><span class="punc">,</span></div>
+                    <div><span class="ln">5</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="key">"education"</span><span class="punc">:</span> <span class="str">"MS Info. Mgmt @ UIUC"</span><span class="punc">,</span></div>
+                    <div><span class="ln">6</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="key">"previously"</span><span class="punc">:</span> <span class="str">"Technical Consulting Engineer @ Cisco"</span><span class="punc">,</span></div>
+                    <div><span class="ln">7</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="key">"status"</span><span class="punc">:</span> <span class="str">"open_to_opportunities"</span><span class="cursor-blink"></span></div>
+                    <div><span class="ln">8</span><span class="punc">}</span></div>
                 </div>
             </div>
 
@@ -80,6 +80,23 @@
                 <div>100K+ daily events processed</div>
                 <div>90% AI chatbot satisfaction</div>
                 <div>99.5% pipeline data accuracy</div>
+            </div>
+        </section>
+
+        <section id="about" class="reveal">
+            <div class="section-eyebrow">$ cat about.md</div>
+            <h2 class="section-title" style="margin-bottom: 24px;">The Person Behind the Code</h2>
+            <div class="about-bio">
+                <div class="bio-photo">
+                    <img src="images/photo-web.jpg" alt="Aagam Shah" loading="lazy">
+                    <div class="caption-bar"><span class="fname">photo.jpg</span><span>Aagam Shah</span></div>
+                </div>
+                <div class="bio-text">
+                    <p>I'm Aagam Shah, a graduate student in Information Management at the University of Illinois Urbana-Champaign, with a background in computer engineering and data science from Manipal University, India.</p>
+                    <p>Before UIUC, I spent two years at Cisco Systems in Bangalore as a Technical Consulting Engineer — building ML and GenAI pipelines, analyzing packet captures for Fortune 500 clients, and pitching <span class="hl">AI prototypes</span> to engineering leadership. One of them was adopted as a <span class="hl">permanent product feature</span>.</p>
+                    <p>At UIUC, I'm an Associate Consultant with BIG Consulting, working end-to-end on an AI-powered knowledge base for a B2B client — stakeholder interviews, PRD, MVP prototype, client presentations.</p>
+                    <p>I'm drawn to problems where I can <span class="hl">own the full arc</span>: understand what users need, build the system that delivers it, and measure real outcomes. Outside of that, I think a lot about <span class="hl">how AI systems fail</span> — and how the best product decisions start with understanding what people are actually struggling with, before reaching for a solution.</p>
+                </div>
             </div>
         </section>
 
@@ -174,116 +191,77 @@
         </section>
 
         <section id="work" class="reveal">
-            <div class="carousel-head">
-                <div class="section-head" style="margin-bottom:0;">
-                    <div class="section-eyebrow">$ ls ~/projects</div>
-                    <h2 class="section-title">Selected Work</h2>
-                </div>
-                <div class="carousel-controls">
-                    <button class="carousel-btn" id="prevBtn" aria-label="Scroll left"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg></button>
-                    <button class="carousel-btn" id="nextBtn" aria-label="Scroll right"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg></button>
-                </div>
+            <div class="section-head">
+                <div class="section-eyebrow">$ ls ~/projects</div>
+                <h2 class="section-title">Selected Work</h2>
             </div>
 
-            <div class="carousel" id="carousel">
+            <div class="project-grid">
                 <div class="proj-card">
-                    <div class="proj-art p1"></div>
-                    <div class="proj-body">
-                        <div class="proj-tag">Shipped to Production</div>
-                        <div class="proj-title">AI Packet Analysis Agent</div>
-                        <div class="proj-desc">Agentic pipeline classifying network fault types with LangChain + NLP. 80% accuracy on 10K+ daily captures.</div>
-                        <div class="proj-proof locked">proprietary — internal to cisco</div>
-                    </div>
+                    <div class="proj-tag">Shipped to Production</div>
+                    <div class="proj-title">AI Packet Analysis Agent</div>
+                    <div class="proj-desc">Agentic pipeline classifying network fault types with LangChain + NLP. 80% accuracy on 10K+ daily captures.</div>
+                    <div class="proj-proof locked">proprietary — internal to cisco</div>
                 </div>
                 <div class="proj-card">
-                    <div class="proj-art p2"></div>
-                    <div class="proj-body">
-                        <div class="proj-tag">UIUC Consulting</div>
-                        <div class="proj-title">Clinical AI Knowledge Base</div>
-                        <div class="proj-desc">LLM-powered retrieval system for a B2B healthcare client. Owned full lifecycle from PRD scoping to MVP prototype.</div>
-                        <div class="proj-proof locked">nda — client confidential</div>
-                    </div>
+                    <div class="proj-tag">UIUC Consulting</div>
+                    <div class="proj-title">Clinical AI Knowledge Base</div>
+                    <div class="proj-desc">LLM-powered retrieval system for a B2B healthcare client. Owned full lifecycle from PRD scoping to MVP prototype.</div>
+                    <div class="proj-proof locked">nda — client confidential</div>
                 </div>
                 <div class="proj-card">
-                    <div class="proj-art p3"></div>
-                    <div class="proj-body">
-                        <div class="proj-tag">Data Engineering</div>
-                        <div class="proj-title">Threat &amp; Risk Analytics Platform</div>
-                        <div class="proj-desc">Cloud-portable ELT platform — PostgreSQL, MinIO, dbt Core, DuckDB — with automated data-quality checks.</div>
-                        <div class="proj-proof"><a href="https://github.com/aagamshah15/threat-risk-analytics-platform" target="_blank" rel="noopener">→ github</a></div>
-                    </div>
+                    <div class="proj-tag">Data Engineering</div>
+                    <div class="proj-title">Threat &amp; Risk Analytics Platform</div>
+                    <div class="proj-desc">Cloud-portable ELT platform — PostgreSQL, MinIO, dbt Core, DuckDB — with automated data-quality checks.</div>
+                    <div class="proj-proof"><a href="https://github.com/aagamshah15/threat-risk-analytics-platform" target="_blank" rel="noopener">→ github</a></div>
                 </div>
                 <div class="proj-card">
-                    <div class="proj-art p4"></div>
-                    <div class="proj-body">
-                        <div class="proj-tag">Agents &amp; RAG</div>
-                        <div class="proj-title">Agentic Document Q&amp;A</div>
-                        <div class="proj-desc">LangChain + FastAPI system that chunks/embeds PDFs and autonomously routes queries with a full observability layer.</div>
-                        <div class="proj-proof locked">private repo — not yet published</div>
-                    </div>
+                    <div class="proj-tag">Agents &amp; RAG</div>
+                    <div class="proj-title">Agentic Document Q&amp;A</div>
+                    <div class="proj-desc">LangChain + FastAPI system that chunks/embeds PDFs and autonomously routes queries with a full observability layer.</div>
+                    <div class="proj-proof locked">private repo — not yet published</div>
                 </div>
                 <div class="proj-card">
-                    <div class="proj-art p1"></div>
-                    <div class="proj-body">
-                        <div class="proj-tag">Full-Stack Product</div>
-                        <div class="proj-title">Loom Analytics</div>
-                        <div class="proj-desc">CSV-to-dashboard product. React + FastAPI, auto-detects templates, generates AI-surfaced insights.</div>
-                        <div class="proj-proof"><a href="https://github.com/aagamshah15/loom-analytics" target="_blank" rel="noopener">→ github</a></div>
-                    </div>
+                    <div class="proj-tag">Full-Stack Product</div>
+                    <div class="proj-title">Loom Analytics</div>
+                    <div class="proj-desc">CSV-to-dashboard product. React + FastAPI, auto-detects templates, generates AI-surfaced insights.</div>
+                    <div class="proj-proof"><a href="https://github.com/aagamshah15/loom-analytics" target="_blank" rel="noopener">→ github</a></div>
                 </div>
                 <div class="proj-card">
-                    <div class="proj-art p2"></div>
-                    <div class="proj-body">
-                        <div class="proj-tag">Academic Research</div>
-                        <div class="proj-title">Medical Cost Prediction</div>
-                        <div class="proj-desc">Random Forest (R²=0.82) and K-Means on 1.3K records to segment health-risk demographics.</div>
-                        <div class="proj-proof locked">course project — repo private</div>
-                    </div>
+                    <div class="proj-tag">Academic Research</div>
+                    <div class="proj-title">Medical Cost Prediction</div>
+                    <div class="proj-desc">Random Forest (R²=0.82) and K-Means on 1.3K records to segment health-risk demographics.</div>
+                    <div class="proj-proof locked">course project — repo private</div>
                 </div>
                 <div class="proj-card">
-                    <div class="proj-art p3"></div>
-                    <div class="proj-body">
-                        <div class="proj-tag">Data Pipeline</div>
-                        <div class="proj-title">COVID-19 Analytics Platform</div>
-                        <div class="proj-desc">ETL for 1M+ WHO/OWID records into a star-schema warehouse. 99.5% accuracy across 50+ countries.</div>
-                        <div class="proj-proof"><a href="https://github.com/aagamshah15/PortfolioProjects" target="_blank" rel="noopener">→ github</a> &nbsp;·&nbsp; <a href="https://public.tableau.com/views/GlobalCOVID-19MortalityTrendsForecastInsights/Dashboard1?:language=en-US&amp;:sid=&amp;:redirect=auth&amp;:display_count=n&amp;:origin=viz_share_link" target="_blank" rel="noopener">→ tableau</a></div>
-                    </div>
+                    <div class="proj-tag">Data Pipeline</div>
+                    <div class="proj-title">COVID-19 Analytics Platform</div>
+                    <div class="proj-desc">ETL for 1M+ WHO/OWID records into a star-schema warehouse. 99.5% accuracy across 50+ countries.</div>
+                    <div class="proj-proof"><a href="https://github.com/aagamshah15/PortfolioProjects" target="_blank" rel="noopener">→ github</a> &nbsp;·&nbsp; <a href="https://public.tableau.com/views/GlobalCOVID-19MortalityTrendsForecastInsights/Dashboard1?:language=en-US&amp;:sid=&amp;:redirect=auth&amp;:display_count=n&amp;:origin=viz_share_link" target="_blank" rel="noopener">→ tableau</a></div>
                 </div>
                 <div class="proj-card">
-                    <div class="proj-art p4"></div>
-                    <div class="proj-body">
-                        <div class="proj-tag">Machine Learning</div>
-                        <div class="proj-title">Static Malware Classifier</div>
-                        <div class="proj-desc">Random Forest on PE-header static analysis. 99.6% accuracy across 51K Windows samples.</div>
-                        <div class="proj-proof"><a href="https://github.com/aagamshah15/static-malware-classifier" target="_blank" rel="noopener">→ github</a></div>
-                    </div>
+                    <div class="proj-tag">Machine Learning</div>
+                    <div class="proj-title">Static Malware Classifier</div>
+                    <div class="proj-desc">Random Forest on PE-header static analysis. 99.6% accuracy across 51K Windows samples.</div>
+                    <div class="proj-proof"><a href="https://github.com/aagamshah15/static-malware-classifier" target="_blank" rel="noopener">→ github</a></div>
                 </div>
                 <div class="proj-card">
-                    <div class="proj-art p1"></div>
-                    <div class="proj-body">
-                        <div class="proj-tag">Computer Vision</div>
-                        <div class="proj-title">Real-Time ML Drowsiness Detection</div>
-                        <div class="proj-desc">Real-time CV system for driver fatigue. 90% accuracy processing 30 FPS video using TensorFlow and OpenCV.</div>
-                        <div class="proj-proof locked">private repo — not yet published</div>
-                    </div>
+                    <div class="proj-tag">Computer Vision</div>
+                    <div class="proj-title">Real-Time ML Drowsiness Detection</div>
+                    <div class="proj-desc">Real-time CV system for driver fatigue. 90% accuracy processing 30 FPS video using TensorFlow and OpenCV.</div>
+                    <div class="proj-proof locked">private repo — not yet published</div>
                 </div>
                 <div class="proj-card">
-                    <div class="proj-art p2"></div>
-                    <div class="proj-body">
-                        <div class="proj-tag">Algorithms</div>
-                        <div class="proj-title">Cloud Task Scheduling</div>
-                        <div class="proj-desc">Independent research on novel metaheuristic scheduling algorithms. 85% efficiency and 80% resource utilization.</div>
-                        <div class="proj-proof locked">independent research — no repo</div>
-                    </div>
+                    <div class="proj-tag">Algorithms</div>
+                    <div class="proj-title">Cloud Task Scheduling</div>
+                    <div class="proj-desc">Independent research on novel metaheuristic scheduling algorithms. 85% efficiency and 80% resource utilization.</div>
+                    <div class="proj-proof locked">independent research — no repo</div>
                 </div>
                 <div class="proj-card">
-                    <div class="proj-art p3"></div>
-                    <div class="proj-body">
-                        <div class="proj-tag">Recommender Systems</div>
-                        <div class="proj-title">Music Recommender</div>
-                        <div class="proj-desc">Hybrid system using collaborative filtering on sparse user-item matrices built from implicit play-count feedback.</div>
-                        <div class="proj-proof"><a href="https://github.com/aagamshah15/music-recommender-system" target="_blank" rel="noopener">→ github</a></div>
-                    </div>
+                    <div class="proj-tag">Recommender Systems</div>
+                    <div class="proj-title">Music Recommender</div>
+                    <div class="proj-desc">Hybrid system using collaborative filtering on sparse user-item matrices built from implicit play-count feedback.</div>
+                    <div class="proj-proof"><a href="https://github.com/aagamshah15/music-recommender-system" target="_blank" rel="noopener">→ github</a></div>
                 </div>
             </div>
 

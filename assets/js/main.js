@@ -103,41 +103,4 @@ document.addEventListener('DOMContentLoaded', () => {
     updateQuote();
   });
   updateQuote();
-
-  // ---------- project carousel ----------
-  // Native smooth scrollBy is canceled by scroll-snap-type: mandatory in Chrome,
-  // so we drive the glide ourselves with rAF, pausing snap for the duration.
-  const carousel = document.getElementById('carousel');
-  if (carousel) {
-    const CARD_STEP = 318; // card width 300 + gap 18, keeps landings on snap points
-    let carouselAnimating = false;
-    function slideCarousel(direction) {
-      const max = carousel.scrollWidth - carousel.clientWidth;
-      const target = Math.max(0, Math.min(max, carousel.scrollLeft + direction * CARD_STEP));
-      // rAF pauses in hidden tabs — jump instantly there and for reduced-motion users
-      if (reduceMotion || document.visibilityState === 'hidden') { carousel.scrollLeft = target; return; }
-      if (carouselAnimating) return;
-      carouselAnimating = true;
-      const start = carousel.scrollLeft;
-      const t0 = performance.now();
-      const duration = 380;
-      carousel.style.scrollSnapType = 'none';
-      function step(now) {
-        const p = Math.min(1, (now - t0) / duration);
-        const eased = 1 - Math.pow(1 - p, 3); // easeOutCubic
-        carousel.scrollLeft = start + (target - start) * eased;
-        if (p < 1) {
-          requestAnimationFrame(step);
-        } else {
-          carousel.style.scrollSnapType = '';
-          carouselAnimating = false;
-        }
-      }
-      requestAnimationFrame(step);
-    }
-    const prevBtn = document.getElementById('prevBtn');
-    const nextBtn = document.getElementById('nextBtn');
-    if (prevBtn) prevBtn.addEventListener('click', () => slideCarousel(-1));
-    if (nextBtn) nextBtn.addEventListener('click', () => slideCarousel(1));
-  }
 });
