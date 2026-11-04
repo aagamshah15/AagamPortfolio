@@ -277,16 +277,30 @@ section { padding: 64px 0; }
   display: grid;
   grid-template-columns: 30px 1fr;
   gap: 16px;
-  padding: 20px 0;
+  padding: 28px 0;
   border-bottom: 1px solid var(--line);
 }
 .timeline-row:first-of-type { padding-top: 0; }
-.timeline-row .prompt { font-family: var(--font-mono); color: var(--accent); padding-top: 3px; }
-.timeline-date { font-family: var(--font-mono); font-size: 0.76rem; color: var(--ink-faint); margin-bottom: 4px; }
-.timeline-org { font-family: var(--font-mono); font-size: 0.72rem; color: var(--signal); margin-bottom: 6px; }
-.timeline-role { font-size: 1.05rem; font-weight: 700; margin-bottom: 8px; }
-.timeline-role .timeline-was { display: inline-block; margin-left: 6px; font-family: var(--font-mono); font-size: 0.74rem; font-weight: 400; color: var(--ink-faint); }
-.timeline-desc { font-size: 0.92rem; color: var(--ink-secondary); max-width: 62ch; }
+.timeline-row .prompt { font-family: var(--font-mono); font-size: 1.05rem; color: var(--accent); padding-top: 2px; }
+.timeline-date { font-family: var(--font-mono); font-size: 0.86rem; color: var(--ink-faint); margin-bottom: 4px; }
+.timeline-org { font-family: var(--font-mono); font-size: 0.84rem; color: var(--signal); margin-bottom: 8px; line-height: 1.5; }
+.timeline-role { font-size: 1.25rem; font-weight: 700; line-height: 1.35; margin-bottom: 10px; letter-spacing: -0.005em; }
+.timeline-role .timeline-was { display: inline-block; margin-left: 8px; font-family: var(--font-mono); font-size: 0.8rem; font-weight: 400; color: var(--ink-faint); letter-spacing: 0; }
+.timeline-desc { font-size: 1.02rem; line-height: 1.7; color: var(--ink-secondary); max-width: 72ch; }
+
+/* desktop: date + org in a left meta column, role + description beside it */
+@media (min-width: 861px) {
+  .timeline-row > div:last-child {
+    display: grid;
+    grid-template-columns: 250px minmax(0, 1fr);
+    grid-template-rows: auto auto 1fr;
+    column-gap: 40px;
+  }
+  .timeline-date { grid-column: 1; grid-row: 1; padding-top: 4px; }
+  .timeline-org { grid-column: 1; grid-row: 2 / span 2; }
+  .timeline-role { grid-column: 2; grid-row: 1 / span 2; }
+  .timeline-desc { grid-column: 2; grid-row: 3; }
+}
 
 /* ---------- certifications ---------- */
 .cert-row { margin-top: 30px; }
@@ -478,6 +492,7 @@ footer {
   .readout { grid-template-columns: 1fr; }
   .assets-grid { grid-template-columns: 1fr; }
   .timeline-row { grid-template-columns: 22px 1fr; }
+  .timeline-role .timeline-was { display: block; margin: 2px 0 0; }
   .about-bio { flex-direction: column; }
   .bio-photo { flex: 0 0 auto; width: min(100%, 320px); align-self: center; }
 }
