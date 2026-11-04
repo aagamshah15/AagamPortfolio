@@ -82,13 +82,12 @@ Where a repo is private or under NDA, say so honestly — `.proj-proof.locked` r
   `champaign-web.jpg`, `manipal-web.jpg`) — 1200px, sips-optimized. The originals are
   multi-MB, and `champaign.jpg` is actually a HEIC despite the extension, so it will
   not render in a browser. Never reference originals from HTML.
-- **Tableau embed:** the embed URL bakes in the *sheet* name, not just the workbook
-  (`/views/<Workbook>/<SheetName>`). Renaming the dashboard tab inside Tableau Public
-  silently breaks the iframe with "Where's the viz?" — this already happened once when
-  the sheet was renamed off `Dashboard1`. The URL appears in four places in
-  `index.html`; change all four together.
-- **Cache busting:** `index.html` loads `style.css?v=YYYYMMDD` and `main.js?v=YYYYMMDD`.
-  Bump the date whenever either file changes, or browsers (and Pages' ~10 min cache)
+- **Tableau:** the live embed was removed in Nov 2026; the COVID-19 slide's live
+  dashboard replaced it. Only the profile link in Contact remains. If an embed comes
+  back, note that Tableau Public URLs bake in the *sheet* name
+  (`/views/<Workbook>/<SheetName>`), so renaming a dashboard tab breaks them silently.
+- **Cache busting:** `index.html` loads `style.css?v=…` and `main.js?v=…` (a date, plus a letter for
+  same-day changes). Bump it whenever either file changes, or browsers (and Pages' ~10 min cache)
   serve the new HTML with the old CSS/JS and the carousel and theme buttons break.
 - **Browser automation:** tabs driven by automation report
   `visibilityState: 'hidden'`, so `requestAnimationFrame` never fires and scroll-tied
