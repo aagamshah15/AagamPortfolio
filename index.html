@@ -21,7 +21,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css?v=20261104">
 </head>
 <body>
 
@@ -35,9 +35,9 @@
                 <a href="#work">work</a>
                 <a href="#contact">contact</a>
             </div>
-            <button class="theme-btn" id="themeBtn" aria-label="Cycle theme">
-                <svg id="themeIcon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 3v18" stroke-dasharray="2 2"/></svg>
-                <span id="themeLabel">system</span>
+            <button class="theme-btn" type="button" aria-label="Cycle theme">
+                <svg class="theme-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 3v18" stroke-dasharray="2 2"/></svg>
+                <span class="theme-label">system</span>
             </button>
         </nav>
 
@@ -50,6 +50,10 @@
                 <a href="#work">work</a>
                 <a href="#contact">contact</a>
             </div>
+            <button class="theme-btn" type="button" aria-label="Cycle theme">
+                <svg class="theme-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 3v18" stroke-dasharray="2 2"/></svg>
+                <span class="theme-label">system</span>
+            </button>
         </div>
 
         <section class="hero">
@@ -205,74 +209,114 @@
                 <h2 class="section-title">Selected Work</h2>
             </div>
 
-            <div class="project-grid">
-                <div class="proj-card">
-                    <div class="proj-tag">Shipped to Production</div>
-                    <div class="proj-title">AI Packet Analysis Agent</div>
-                    <div class="proj-desc">Agentic pipeline classifying network fault types with LangChain + NLP. 80% accuracy on 10K+ daily captures.</div>
-                    <div class="proj-proof locked">proprietary — internal to cisco</div>
+            <div class="carousel" id="carousel" aria-roledescription="carousel" aria-label="Selected projects">
+                <div class="c-head">
+                    <div class="c-tabs" role="tablist" aria-label="Choose a project">
+                        <button type="button" class="c-tab" role="tab" id="tab-nyc" aria-controls="slide-nyc" aria-selected="true" tabindex="0"><span class="live" title="live demo"></span>nyc-ride-market/</button>
+                        <button type="button" class="c-tab" role="tab" id="tab-covid" aria-controls="slide-covid" aria-selected="false" tabindex="-1"><span class="live" title="live demo"></span>covid-19-analytics/</button>
+                        <button type="button" class="c-tab" role="tab" id="tab-loom" aria-controls="slide-loom" aria-selected="false" tabindex="-1"><span class="live" title="live demo"></span>loom/</button>
+                        <button type="button" class="c-tab" role="tab" id="tab-vigil" aria-controls="slide-vigil" aria-selected="false" tabindex="-1"><span class="local" title="runs locally"></span>vigil-soc/</button>
+                        <button type="button" class="c-tab" role="tab" id="tab-dimension" aria-controls="slide-dimension" aria-selected="false" tabindex="-1"><span class="local" title="runs locally"></span>dimension/</button>
+                    </div>
+                    <div class="c-ctrl">
+                        <button type="button" class="c-prev" aria-label="Previous project">←</button>
+                        <span class="c-count" aria-live="polite">01/05</span>
+                        <button type="button" class="c-next" aria-label="Next project">→</button>
+                    </div>
                 </div>
-                <div class="proj-card">
-                    <div class="proj-tag">UIUC Consulting</div>
-                    <div class="proj-title">Clinical AI Knowledge Base</div>
-                    <div class="proj-desc">LLM-powered retrieval system for a B2B healthcare client. Owned full lifecycle from PRD scoping to MVP prototype.</div>
-                    <div class="proj-proof locked">nda — client confidential</div>
-                </div>
-                <div class="proj-card">
-                    <div class="proj-tag">Data Engineering</div>
-                    <div class="proj-title">Threat &amp; Risk Analytics Platform</div>
-                    <div class="proj-desc">Cloud-portable ELT platform — PostgreSQL, MinIO, dbt Core, DuckDB — with automated data-quality checks.</div>
-                    <div class="proj-proof"><a href="https://github.com/aagamshah15/threat-risk-analytics-platform" target="_blank" rel="noopener">→ github</a></div>
-                </div>
-                <div class="proj-card">
-                    <div class="proj-tag">Agents &amp; RAG</div>
-                    <div class="proj-title">Agentic Document Q&amp;A</div>
-                    <div class="proj-desc">LangChain + FastAPI system that chunks/embeds PDFs and autonomously routes queries with a full observability layer.</div>
-                    <div class="proj-proof locked">private repo — not yet published</div>
-                </div>
-                <div class="proj-card">
-                    <div class="proj-tag">Full-Stack Product</div>
-                    <div class="proj-title">Loom Analytics</div>
-                    <div class="proj-desc">CSV-to-dashboard product. React + FastAPI, auto-detects templates, generates AI-surfaced insights.</div>
-                    <div class="proj-proof"><a href="https://github.com/aagamshah15/loom-analytics" target="_blank" rel="noopener">→ github</a></div>
-                </div>
-                <div class="proj-card">
-                    <div class="proj-tag">Academic Research</div>
-                    <div class="proj-title">Medical Cost Prediction</div>
-                    <div class="proj-desc">Random Forest (R²=0.82) and K-Means on 1.3K records to segment health-risk demographics.</div>
-                    <div class="proj-proof locked">course project — repo private</div>
-                </div>
-                <div class="proj-card">
-                    <div class="proj-tag">Data Pipeline</div>
-                    <div class="proj-title">COVID-19 Analytics Platform</div>
-                    <div class="proj-desc">ETL for 1M+ WHO/OWID records into a star-schema warehouse. 99.5% accuracy across 50+ countries.</div>
-                    <div class="proj-proof"><a href="https://github.com/aagamshah15/COVID-19-Analytics" target="_blank" rel="noopener">→ github</a> &nbsp;·&nbsp; <a href="https://public.tableau.com/views/GlobalCOVID-19MortalityTrendsForecastInsights/GlobalCOVID-19MortalityTrends?:language=en-US&amp;:sid=&amp;:redirect=auth&amp;:display_count=n&amp;:origin=viz_share_link" target="_blank" rel="noopener">→ tableau</a></div>
-                </div>
-                <div class="proj-card">
-                    <div class="proj-tag">Machine Learning</div>
-                    <div class="proj-title">Static Malware Classifier</div>
-                    <div class="proj-desc">Random Forest on PE-header static analysis. 99.6% accuracy across 51K Windows samples.</div>
-                    <div class="proj-proof"><a href="https://github.com/aagamshah15/static-malware-classifier" target="_blank" rel="noopener">→ github</a></div>
-                </div>
-                <div class="proj-card">
-                    <div class="proj-tag">Computer Vision</div>
-                    <div class="proj-title">Real-Time ML Drowsiness Detection</div>
-                    <div class="proj-desc">Real-time CV system for driver fatigue. 90% accuracy processing 30 FPS video using TensorFlow and OpenCV.</div>
-                    <div class="proj-proof locked">private repo — not yet published</div>
-                </div>
-                <div class="proj-card">
-                    <div class="proj-tag">Algorithms</div>
-                    <div class="proj-title">Cloud Task Scheduling</div>
-                    <div class="proj-desc">Independent research on novel metaheuristic scheduling algorithms. 85% efficiency and 80% resource utilization.</div>
-                    <div class="proj-proof locked">independent research — no repo</div>
-                </div>
-                <div class="proj-card">
-                    <div class="proj-tag">Recommender Systems</div>
-                    <div class="proj-title">Music Recommender</div>
-                    <div class="proj-desc">Hybrid system using collaborative filtering on sparse user-item matrices built from implicit play-count feedback.</div>
-                    <div class="proj-proof"><a href="https://github.com/aagamshah15/music-recommender-system" target="_blank" rel="noopener">→ github</a></div>
+                <div class="c-viewport">
+                    <div class="c-track">
+                        <article class="slide" id="slide-nyc" role="tabpanel" aria-labelledby="tab-nyc" aria-roledescription="slide">
+                            <div class="browser">
+                                <div class="b-bar"><span class="editor-dot red"></span><span class="editor-dot yellow"></span><span class="editor-dot green"></span><span class="b-url">aagamshah15.github.io/nyc-ride-market</span></div>
+                                <div class="b-shot"><img src="images/projects/nyc.jpg" alt="NYC Ride Market site" width="1280" height="800" data-view="0"><a class="b-open" href="https://aagamshah15.github.io/nyc-ride-market/" target="_blank" rel="noopener">open live ↗</a></div>
+                            </div>
+                            <div class="s-info">
+                                <div class="s-tag">Public analytics product</div>
+                                <h3 class="s-title">NYC Ride Market</h3>
+                                <p class="s-desc">An independent public site profiling New York’s ride market from every trip record the TLC publishes since 2024: who carries the trips, and what congestion pricing and the new driver pay rule changed.</p>
+                                <ul class="s-stats"><li>// <b>830,000</b> trips per day, Sep 2026</li><li>// <b>84%</b> of trips on ride-hail apps</li><li>// <b>weekly</b> Actions refresh behind a validation gate</li></ul>
+                                <div class="s-chips"><span>Python 3.12</span><span>DuckDB SQL</span><span>Observable Framework</span><span>GitHub Actions</span></div>
+                                <div class="s-links"><a class="primary" href="https://aagamshah15.github.io/nyc-ride-market/" target="_blank" rel="noopener">live demo ↗</a><a href="https://github.com/aagamshah15/nyc-ride-market" target="_blank" rel="noopener">→ github</a><a href="https://medium.com/@aagam.work7/i-turned-nearly-800-million-new-york-rides-into-interesting-insights-d271eed55ad8" target="_blank" rel="noopener">→ medium article</a></div>
+                                <div class="s-meta"><span><span class="pulse"></span>live</span><span>last commit 2 Nov 2026 · 142 commits</span></div>
+                            </div>
+                        </article>
+                        <article class="slide" id="slide-covid" role="tabpanel" aria-labelledby="tab-covid" aria-roledescription="slide" inert>
+                            <div class="browser">
+                                <div class="b-bar"><span class="editor-dot red"></span><span class="editor-dot yellow"></span><span class="editor-dot green"></span><span class="b-url">aagamshah15.github.io/COVID-19-Analytics</span><div class="b-views"><button type="button" data-view="0" aria-pressed="true">dashboard</button><button type="button" data-view="1" aria-pressed="false">simulator</button></div></div>
+                                <div class="b-shot"><img src="images/projects/covid.jpg" alt="COVID-19 Analytics dashboard" width="1280" height="800" data-view="0" loading="lazy"><img src="images/projects/covid-sim.jpg" alt="COVID-19 Analytics simulator" width="1280" height="800" data-view="1" hidden loading="lazy"><a class="b-open" href="https://aagamshah15.github.io/COVID-19-Analytics/" target="_blank" rel="noopener">open live ↗</a></div>
+                            </div>
+                            <div class="s-info">
+                                <div class="s-tag">Data pipeline + dashboard</div>
+                                <h3 class="s-title">COVID-19 Analytics</h3>
+                                <p class="s-desc">Turns the Our World in Data and WHO datasets into a tested, quality-gated star-schema warehouse with a weekly deaths forecast, served through a live D3 dashboard and a pandemic simulator.</p>
+                                <ul class="s-stats"><li>// <b>239</b> countries and territories, 2020–2023</li><li>// <b>~30s</b> end-to-end pipeline on a laptop</li><li>// <b>Mondays</b> rebuilt from the live sources</li></ul>
+                                <div class="s-chips"><span>Python</span><span>DuckDB / Postgres</span><span>SQL</span><span>D3</span></div>
+                                <div class="s-links"><a class="primary" href="https://aagamshah15.github.io/COVID-19-Analytics/" target="_blank" rel="noopener">live demo ↗</a><a href="https://github.com/aagamshah15/COVID-19-Analytics" target="_blank" rel="noopener">→ github</a></div>
+                                <div class="s-meta"><span><span class="pulse"></span>live</span><span>last commit 6 Oct 2026</span></div>
+                            </div>
+                        </article>
+                        <article class="slide" id="slide-loom" role="tabpanel" aria-labelledby="tab-loom" aria-roledescription="slide" inert>
+                            <div class="browser">
+                                <div class="b-bar"><span class="editor-dot red"></span><span class="editor-dot yellow"></span><span class="editor-dot green"></span><span class="b-url">loom-analytics.netlify.app</span></div>
+                                <div class="b-shot"><img src="images/projects/loom.jpg" alt="Loom app" width="1280" height="800" data-view="0" loading="lazy"><a class="b-open" href="https://loom-analytics.netlify.app/" target="_blank" rel="noopener">open live ↗</a></div>
+                            </div>
+                            <div class="s-info">
+                                <div class="s-tag">Full-stack product</div>
+                                <h3 class="s-title">Loom</h3>
+                                <p class="s-desc">Upload a CSV and Loom detects the right business template, surfaces the non-obvious findings for you to approve, then builds a shareable dashboard from the story you kept.</p>
+                                <ul class="s-stats"><li>// <b>4</b> templates: finance, e-commerce, healthcare, HR</li><li>// <b>3</b> layers: Python pipeline, FastAPI, React</li><li>// <b>live</b> on Netlify with a Render API</li></ul>
+                                <div class="s-chips"><span>Python</span><span>FastAPI</span><span>React + Vite</span><span>Streamlit prototype</span></div>
+                                <div class="s-links"><a class="primary" href="https://loom-analytics.netlify.app/" target="_blank" rel="noopener">live demo ↗</a><a href="https://github.com/aagamshah15/loom-analytics" target="_blank" rel="noopener">→ github</a></div>
+                                <div class="s-meta"><span><span class="pulse"></span>live</span><span>last commit 13 Oct 2026</span></div>
+                            </div>
+                        </article>
+                        <article class="slide" id="slide-vigil" role="tabpanel" aria-labelledby="tab-vigil" aria-roledescription="slide" inert>
+                            <div class="browser">
+                                <div class="b-bar"><span class="editor-dot red"></span><span class="editor-dot yellow"></span><span class="editor-dot green"></span><span class="b-url">runs locally · docker compose</span></div>
+                                <div class="b-shot"><img class="only-dark" src="images/projects/vigil-dark.jpg" alt="Vigil SOC Command Center analyst UI, dark theme" width="1280" height="800" loading="lazy"><img class="only-light" src="images/projects/vigil-light.jpg" alt="Vigil SOC Command Center analyst UI, light theme" width="1280" height="800" loading="lazy"></div>
+                            </div>
+                            <div class="s-info">
+                                <div class="s-tag">Data + security engineering</div>
+                                <h3 class="s-title">Vigil SOC Command Center</h3>
+                                <p class="s-desc">A local-first security operations platform that ingests real threat-intelligence feeds, correlates events into incidents and risk scores, and streams them to a full analyst UI.</p>
+                                <ul class="s-stats"><li>// <b>Redpanda</b> → S3 bronze lake → dbt marts</li><li>// <b>FastAPI</b> with JWT and a live WebSocket feed</li><li>// <b>Grafana</b> SLO dashboards, CI on GitHub Actions</li></ul>
+                                <div class="s-chips"><span>Kafka / Redpanda</span><span>dbt</span><span>FastAPI</span><span>React</span><span>Prefect</span><span>Docker</span></div>
+                                <div class="s-links"><a href="https://github.com/aagamshah15/vigil-soc-platform" target="_blank" rel="noopener">→ github</a></div>
+                                <div class="s-meta"><span>○ runs locally</span><span>last commit 8 Jun 2026</span></div>
+                            </div>
+                        </article>
+                        <article class="slide" id="slide-dimension" role="tabpanel" aria-labelledby="tab-dimension" aria-roledescription="slide" inert>
+                            <div class="browser">
+                                <div class="b-bar"><span class="editor-dot red"></span><span class="editor-dot yellow"></span><span class="editor-dot green"></span><span class="b-url">runs locally · uvicorn main:app</span></div>
+                                <div class="b-shot"><img src="images/projects/dimension.jpg" alt="Dimension workbench" width="1280" height="800" data-view="0" loading="lazy"></div>
+                            </div>
+                            <div class="s-info">
+                                <div class="s-tag">AI developer tool</div>
+                                <h3 class="s-title">Dimension</h3>
+                                <p class="s-desc">A local-first database workbench. Connect Postgres, MySQL, SQLite or DuckDB, map the schema, triage data-quality findings, and ask questions in plain English with guarded SQL.</p>
+                                <ul class="s-stats"><li>// <b>4</b> database engines, 6 studio views</li><li>// <b>AST</b> checks and EXPLAIN cost guards on generated SQL</li><li>// <b>local</b> models via Ollama, no telemetry</li></ul>
+                                <div class="s-chips"><span>Python</span><span>FastAPI</span><span>LangChain</span><span>DuckDB</span><span>Ollama</span></div>
+                                <div class="s-links"><a href="https://github.com/aagamshah15/agentic-document-qa" target="_blank" rel="noopener">→ github</a></div>
+                                <div class="s-meta"><span>○ runs locally</span><span>last commit 30 Oct 2026</span></div>
+                            </div>
+                        </article>
+                    </div>
                 </div>
             </div>
+
+            <details class="archive">
+                <summary><span class="p">$</span> ls ~/projects --all <span aria-hidden="true">↓</span> 7 more</summary>
+                <ul>
+                    <li>AI Packet Analysis Agent <span>shipped at Cisco · proprietary</span></li>
+                    <li>Clinical AI Knowledge Base <span>BIG Consulting · NDA</span></li>
+                    <li>Static Malware Classifier <span><a href="https://github.com/aagamshah15/static-malware-classifier" target="_blank" rel="noopener">github</a></span></li>
+                    <li>Music Recommender <span><a href="https://github.com/aagamshah15/music-recommender-system" target="_blank" rel="noopener">github</a></span></li>
+                    <li>Medical Cost Prediction <span>course project · private</span></li>
+                    <li>Real-Time ML Drowsiness Detection <span>private repo</span></li>
+                    <li>Cloud Task Scheduling <span>independent research · no repo</span></li>
+                </ul>
+            </details>
 
             <div class="dashboard-viewport">
                 <div class="dv-header">
@@ -309,6 +353,6 @@
         <footer>// © <span id="year"></span> Aagam Shah — built with modern web standards</footer>
     </div>
 
-    <script src="assets/js/main.js"></script>
+    <script src="assets/js/main.js?v=20261104"></script>
 </body>
 </html>

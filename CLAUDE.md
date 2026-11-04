@@ -37,6 +37,15 @@ without being asked.
 - Type: JetBrains Mono (`--font-mono`) + Inter (`--font-body`), from Google Fonts.
 - Motion: typewriter, scroll-tied word-fill pull quote (`#pullQuote`), section
   reveals, floating pill nav (`#navPill`). All in `main.js`, one shared scroll handler.
+- Nav: the floating pill (appears after scrolling past the top nav) is deliberately
+  large: 1.02rem links, active-section underline, its own theme button. It stays
+  visible on phones (the mark and theme label hide; `edu` drops under 400px). Theme
+  buttons are bound by the `.theme-btn` class, not an id, so there can be several.
+- Work: a 5-slide carousel (`#carousel`) with file-tab navigation, one slide per
+  shipped project with a real screenshot in `images/projects/`. Projects without
+  a live demo or public proof go in the collapsible `ls ~/projects --all` list
+  below it, never in the carousel. Vigil's slide swaps dark/light screenshots
+  through the `--show-dark` / `--show-light` tokens.
 
 **Theming is a hard requirement.** Three states cycled by `#themeBtn`: system / light
 / dark. Colors are tokens on `:root`, redefined under
@@ -78,6 +87,9 @@ Where a repo is private or under NDA, say so honestly — `.proj-proof.locked` r
   silently breaks the iframe with "Where's the viz?" — this already happened once when
   the sheet was renamed off `Dashboard1`. The URL appears in four places in
   `index.html`; change all four together.
+- **Cache busting:** `index.html` loads `style.css?v=YYYYMMDD` and `main.js?v=YYYYMMDD`.
+  Bump the date whenever either file changes, or browsers (and Pages' ~10 min cache)
+  serve the new HTML with the old CSS/JS and the carousel and theme buttons break.
 - **Browser automation:** tabs driven by automation report
   `visibilityState: 'hidden'`, so `requestAnimationFrame` never fires and scroll-tied
   animations appear frozen. Screenshots of the typewriter / pull quote / reveals will
