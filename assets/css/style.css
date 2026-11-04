@@ -254,14 +254,23 @@ section { padding: 64px 0; }
 .section-title { font-family: var(--font-body); font-size: 1.7rem; font-weight: 800; margin: 6px 0 0; letter-spacing: -0.01em; }
 
 /* ---------- pull quote ---------- */
-.pull-quote {
-  font-family: var(--font-mono);
-  font-size: clamp(1.1rem, 3vw, 1.6rem);
-  line-height: 1.6;
-  max-width: 62ch;
+.gitlog { padding: 90px 0; font-family: var(--font-mono); }
+.gl-cmd { font-size: 0.92rem; color: var(--ink-faint); margin-bottom: 26px; }
+.gl-cmd .p { color: var(--accent); margin-right: 8px; }
+.gl-list { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: max-content minmax(0, 1fr); gap: 14px 22px; }
+.gl-row {
+  display: grid; grid-column: 1 / -1; grid-template-columns: subgrid; align-items: baseline;
+  font-size: clamp(1.05rem, 2.3vw, 1.55rem); line-height: 1.35;
+  color: var(--ink-faint); opacity: 0.32;
+  transition: opacity 0.45s ease, color 0.45s ease;
 }
-.pull-quote span { color: var(--ink-faint); transition: color 0.05s linear; }
-.pull-quote span.lit { color: var(--accent); }
+.gl-row .hash { color: var(--comment); font-size: 0.82em; }
+.gl-row.lit { opacity: 1; color: var(--ink-secondary); }
+.gl-row.head { font-size: clamp(1.3rem, 3.2vw, 1.85rem); font-weight: 700; margin-top: 10px; }
+.gl-row.head .hash { color: var(--accent); font-size: 0.62em; font-weight: 700; white-space: nowrap; }
+.gl-row.head.lit { color: var(--accent); }
+.gl-row .cursor { display: inline-block; width: 0.55em; height: 1.05em; margin-left: 6px; vertical-align: -0.15em; background: var(--accent); animation: cursor-blink 1.05s steps(1) infinite; }
+@keyframes cursor-blink { 50% { opacity: 0; } }
 
 /* ---------- timeline ---------- */
 .timeline-row {
@@ -466,6 +475,12 @@ footer {
   .timeline-row { grid-template-columns: 22px 1fr; }
   .about-bio { flex-direction: column; }
   .bio-photo { flex: 0 0 auto; width: min(100%, 320px); align-self: center; }
+}
+
+@media (max-width: 560px) {
+  .gitlog { padding: 60px 0; }
+  .gl-list, .gl-row { grid-template-columns: minmax(0, 1fr); }
+  .gl-row .hash { font-size: 0.72em; }
 }
 
 @media (max-width: 400px) {

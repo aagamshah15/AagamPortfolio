@@ -54,21 +54,17 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
-  // ---------- scroll-tied pull quote fill ----------
-  const quote = document.getElementById('pullQuote');
-  let quoteSpans = [];
-  if (quote) {
-    const words = quote.textContent.split(' ');
-    quote.innerHTML = words.map(w => '<span>' + w + ' </span>').join('');
-    quoteSpans = quote.querySelectorAll('span');
-  }
-  function updateQuote() {
-    if (!quote) return;
-    const rect = quote.getBoundingClientRect();
+  // ---------- scroll-tied git log: commits light up in order ----------
+  const gitLog = document.getElementById('gitLog');
+  const logRows = gitLog ? gitLog.querySelectorAll('.gl-row') : [];
+  function updateLog() {
+    if (!gitLog) return;
+    if (reduceMotion) { logRows.forEach(r => r.classList.add('lit')); return; }
+    const rect = gitLog.getBoundingClientRect();
     const vh = window.innerHeight;
-    const progress = Math.min(1, Math.max(0, (vh * 0.75 - rect.top) / (rect.height + vh * 0.3)));
-    const litCount = Math.floor(progress * quoteSpans.length);
-    quoteSpans.forEach((s, i) => s.classList.toggle('lit', i < litCount));
+    const progress = Math.min(1, Math.max(0, (vh * 0.8 - rect.top) / (rect.height * 0.75)));
+    const litCount = Math.ceil(progress * logRows.length);
+    logRows.forEach((r, i) => r.classList.toggle('lit', i < litCount));
   }
 
   // ---------- project carousel ----------
@@ -146,7 +142,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const navBottom = primaryNav.offsetTop + primaryNav.offsetHeight;
       navPill.classList.toggle('visible', window.pageYOffset > navBottom);
     }
-    updateQuote();
+    updateLog();
   });
-  updateQuote();
+  updateLog();
 });

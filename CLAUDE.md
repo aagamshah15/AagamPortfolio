@@ -35,7 +35,8 @@ without being asked.
 - Stats read as `//` code comments; timelines use `$` prompts; section eyebrows are
   `$ cat experience.log`-style commands; contact links are terminal commands.
 - Type: JetBrains Mono (`--font-mono`) + Inter (`--font-body`), from Google Fonts.
-- Motion: typewriter, scroll-tied word-fill pull quote (`#pullQuote`), section
+- Motion: typewriter, a scroll-tied git log between About and Experience (`#gitLog`,
+  commits light up in order, `HEAD` is the punchline), section
   reveals, floating pill nav (`#navPill`). All in `main.js`, one shared scroll handler.
 - Nav: the floating pill (appears after scrolling past the top nav) is deliberately
   large: 1.02rem links, active-section underline, its own theme button. It stays

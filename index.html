@@ -21,7 +21,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="assets/css/style.css?v=20261104c">
+    <link rel="stylesheet" href="assets/css/style.css?v=20261104d">
 </head>
 <body>
 
@@ -103,8 +103,14 @@
             </div>
         </section>
 
-        <section class="reveal">
-            <p class="pull-quote" id="pullQuote">I make complex systems understandable — from packet captures at Cisco to LLM pipelines at UIUC, the job is the same: find what's actually broken, then build the thing that fixes it.</p>
+        <section class="gitlog reveal" id="gitLog" aria-label="Career so far, as a git log">
+            <div class="gl-cmd"><span class="p">$</span>git log --oneline --reverse aagam</div>
+            <ol class="gl-list">
+                <li class="gl-row"><span class="hash">da7a5c1</span><span>add data science minor @ manipal</span></li>
+                <li class="gl-row"><span class="hash">c15c0ae</span><span>ship enterprise security + ai @ cisco</span></li>
+                <li class="gl-row"><span class="hash">1a3b9f2</span><span>checkout ms information management @ uiuc</span></li>
+                <li class="gl-row head"><span class="hash">HEAD →</span><span>ai-native data nerd. bring me your messiest data<span class="cursor" aria-hidden="true"></span></span></li>
+            </ol>
         </section>
 
         <section id="experience" class="reveal">
@@ -337,6 +343,6 @@
         <footer>// © <span id="year"></span> Aagam Shah — built with modern web standards</footer>
     </div>
 
-    <script src="assets/js/main.js?v=20261104c"></script>
+    <script src="assets/js/main.js?v=20261104d"></script>
 </body>
 </html>
