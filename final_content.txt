@@ -11,10 +11,10 @@ This document compiles all portfolio content for website use. Each section inclu
 Short Bio (hero section — 1 sentence)
 Data & AI engineer building LLM pipelines, autonomous agents, and data products — with 2+ years at Cisco and active consulting at UIUC.
 Portfolio Note: Use on homepage hero directly below name. Keep it to one punchy line.
-About Bio (About page — 3 paragraphs)
-I'm Aagam Shah, an MS Information Management student at UIUC (GPA 3.89), with a background in computer engineering and data science. Before graduate school, I spent two years at Cisco Systems building ML and GenAI pipelines, analyzing enterprise system logs at scale, and pitching AI prototypes to engineering leadership — one of which was adopted as a permanent product feature used by engineers globally.
-At UIUC, I'm a Senior Manager with the BIG Consulting group and a Data Analyst at Gies College of Business. At BIG I've worked end-to-end on an AI knowledge management product for a B2B software client — from stakeholder interviews and PRD through MVP prototype and client presentations. My work spans three areas I genuinely care about: data engineering, AI/LLM systems, and product management.
-I'm drawn to problems where I can own the full arc — understand what users need, build the system that delivers it, and measure real outcomes.
+About Bio (About page — 3 paragraphs; rewritten by Aagam, Nov 2026)
+I enjoy building data and AI products end to end: identifying the real problem, developing the system that fixes it, and measuring the impact it creates.
+Right now that happens in three places. At BIG Consulting (https://ischool.illinois.edu/engage/BIG), I'm a Senior Manager running multiple client engagements with a cohort of 30 student consultants. At Gies College of Business (https://giesbusiness.illinois.edu/), I help the DSAR team turn admissions data into reporting that program offices use to make data-driven decisions. And on my own time, I publish projects on real public data. Most recently, an analysis of New York's ride market (https://aagamshah15.github.io/nyc-ride-market/) that updates automatically as new data is released.
+Before UIUC, I spent two years at Cisco helping clients onboard and implement enterprise security systems. Most notably, I helped ideate and build an AI agent that became a permanent product feature. I graduate in May 2027 with an MS in Information Management, and I'm open to discussing Data, Analytics and Forward Deployed Engineer (FDE) roles.
 Portfolio Note: Use on About page. Three short paragraphs with breathing room between them.
 Taglines (pick one for hero)
 	•	Building AI systems that think in feedback loops, not just features.
