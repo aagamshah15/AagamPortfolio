@@ -293,6 +293,7 @@ Tags
 	•	Observability
 Portfolio Note: Strong for AI/PM roles. Emphasize feedback loop and observability design.
 Loom Analytics — CSV-to-Dashboard Product
+Recognition: built for the OpenAI × Handshake Codex Creator Challenge (https://joinhandshake.com/students/codex-creator-challenge/); selected as one of the projects, did not win.
 Status: In progress / Personal project
 GitHub: github.com/aagamshah15/loom-analytics
 Tech Stack: Python, FastAPI, React, TypeScript, Vite, Tailwind CSS, Streamlit, Pandas, NumPy, SciPy, Matplotlib, Seaborn, Playwright, Netlify, Render
